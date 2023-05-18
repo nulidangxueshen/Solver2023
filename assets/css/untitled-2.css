@@ -1,0 +1,5 @@
+.nav-link:hover, .nav-link:focus {
+  color: #35b082;
+  text-transform: none;
+}
+

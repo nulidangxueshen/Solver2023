@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>第六届解法器快速算法及应用研讨会</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/untitled-1.css">
+    <link rel="stylesheet" href="assets/css/untitled-2.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77" style="background: var(--bs-red);">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#">SOLVER23</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item nav-link"><a class="nav-link active" href="#about-solver" style="background: rgba(255,255,255,0);">SOLVER</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#problem_sets">解法器问题集</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#program">会议日程</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#organization">会议组织</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#info">参会信息</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#archive">往届会议</a></li>
+                    <li class="nav-item nav-link" style="text-transform : none;"><a class="nav-link" href="#" target="blank">SolverChallenge</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background: url(&quot;assets/img/xining-qhh.jpg &quot;) repeat;background-size: cover;">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading" style="font-size: 50px;">第六届解法器快速算法及应用研讨会</h1>
+                        <p class="intro-text" style="filter: brightness(200%) contrast(106%);font-size: 28px;">2023年8月7日-8月10日<br>青海 · 西宁<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center content-section" id="about-solver" style="padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>关于SOLVER系列研讨会</h2>
+                    <p style="text-align: left;">
+                        &nbsp; &nbsp; &nbsp; &nbsp; SOLVER系列研讨会围绕大规模科学与工程计算领域的数值代数问题，探讨应用驱动且适合大规模计算的高可扩展解法器快速算法。该会议面向数值代数解法器的算法设计、理论分析、并行实现、性能优化、软件及应用，研讨主题包括但不限于如下方面：<br>
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 线性代数方程组求解算法；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 非线性代数方程组求解算法；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 特征值问题求解算法；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 微分方程快速求解算法；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 稀疏矩阵与图计算相关算法；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 面向体系结构的解法器性能优化；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 解法器软件与性能调优工具；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 机器学习在解法器中的应用；
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 解法器在实际数值模拟中的应用。
+                        <br>
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp;
+                            <a href="https://www.solver-conference.cn/solverchallenge21/" target="blank">
+                                <span style="text-decoration: underline;">SolverChallenge竞赛</span>
+                            </a> 是SOLVER系列研讨会的一项特色活动，由SOLVER组委会主办，每年举行一次。第三届竞赛（SolverChallenge23）将与SOLVER23同期启动。<br>
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 第六届会议（SOLVER2023）由青海大学计算机技术与应用系承办，会议定于2023年8月7日—10日在青海西宁举办。
+                    </p>
+
+                    <h2>SOLVER23承办单位</h2>
+                    <p style="text-align: center; font-size: 20px;">
+                        青海大学计算机技术与应用系
+                    </p>
+
+                    <h2>SOLVER23赞助单位</h2>
+                    <p style="text-align: center;margin: 0px;">
+                        <span style="font-size: 20px;">钻石赞助单位</span>
+                        <br>
+                        <br>
+                        待定
+                        <!-- <img style="background: rgb(255,255,255);padding: -20px;height: 85px;" src="assets/img/empyrean_logo.png"> -->
+                        <br>
+                        <br>
+                        白金赞助单位
+                        <br>
+                        <br>
+                        待定
+                        <!-- <img style="background: #ffffff;padding: 5px;width: 200px;" src="assets/img/sugon_logo.png"> -->
+                        <!-- <br>
+                        <br>
+                        <img style="background: #ffffff;padding: 5px;width: 200px;" src="assets/img/enflame_logo.png"> -->
+                        <br>
+                        <br>
+                        金牌赞助单位
+                        <br>
+                        <br>
+                        待定
+                        <!-- <img src="assets/img/ssslab_logo.png" style="background: #ffffff;width: 200px;padding: 5px;"> -->
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="problem_sets" class="content-section" style="background: rgb(39,122,169);padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;">解法器问题集</h2>
+                    <p style="text-align: left;margin-bottom: 5px;">
+                        &nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; Solver研讨会公开征集解法器问题，形成问题集。讨论主题可由1人或多人联合提出，对每个入选的主题，将安排不超过5分钟主题发言（形式不限），由提议者阐述问题，然后组织讨论。主题讨论时间根据具体情况确定。征集范围包括但不限于：
+                        <br><br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; 有待解决的解法器相关理论、算法、实现及应用等问题；
+                        <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;实际应用对解法器的需求；
+                        <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;解法器研究及应用过程中的新现象和新问题；
+                        <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;对解法器相关研究进展的评论与讨论；
+                        <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;解法器相关学术交流、合作平台的建议与提议；
+                        <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;其他任何与解法器相关的问题。
+                        <br><br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; 当前问题集：<a href="#" target="_blank" style="text-decoration: none;">Solver研讨会问题集2018-2022</a>
+                    </p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center download-section content-section" id="program" style="background: var(--bs-info);">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <h1>会议日程</h1>
+                <div class="table-responsive">
+                    <table class="table" style="font-size: 20px;">
+                        <thead>
+                            <tr>
+                                <th>日期</th>
+                                <th>计划</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8 月 7 日</td>
+                                <td>报到</td>
+                            </tr>
+                            <tr>
+                                <td>8 月 8 日</td>
+                                <td>会议 DAY 1</td>
+                            </tr>
+                            <tr>
+                                <td>8 月 9 日</td>
+                                <td>会议 DAY 2</td>
+                            </tr>
+                            <tr>
+                                <td>8 月 10 日</td>
+                                <td>会议 DAY3</td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center;font-size: 20px; margin-top: 66px;">具体会议日程见此链接：<a href="#" style="color: yellow; text-decoration: none;">SOLVER23会议日程</a><br><br></p>
+    </section>
+
+    <!-- <section class="text-center download-section content-section" id="program" style="background: var(--bs-info);">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <h1>会议日程</h1>
+                <p style="text-align: center;color: var(--bs-white);font-weight: bold;font-size: 26px;">2021年11月12日 第一天<br></p>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">15:00-22:00</td>
+                                <td><strong>注册报到</strong></td>
+                            </tr>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">19:00-21:00</td>
+                                <td><strong>SolverChallenge 答辩</strong><br></td>
+                                <td><strong>参赛队伍、评委</strong><br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="text-align: center;color: var(--bs-white);font-weight: bold;font-size: 26px;">2021年11月13日 第二天<br></p>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">8:30-8:35</td>
+                                <td><strong>承办方领导致词</strong><br></td>
+                            </tr>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">8:35-8:45</td>
+                                <td><strong>会议组织者介绍会议情况</strong><br></td>
+                            </tr>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>主题报告1. 解法器应用<br></th>
+                                <th>主持人：谢和虎</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width: 105px;text-align: center;">时间</th>
+                                <th>报告人</th>
+                                <th>报告题目</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">8:45-9:05</td>
+                                <td>陈荣亮（中国科学院深圳先进技术研究院）</td>
+                                <td>High Performance Blood Flow Simulation Algorithms and Applications</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">9:05-9:25</td>
+                                <td>张汉（清华大学）</td>
+                                <td>裂变反应堆多物理耦合问题对非线性求解器的需求</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">9:25-9:45</td>
+                                <td>马召灿（中物院高性能数值模拟软件中心）</td>
+                                <td>半导体器件仿真及其辐射效应的数值模拟挑战</td>
+                            </tr>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">9:45-10:15</td>
+                                <td><strong>会议合影+茶歇</strong></td>
+                            </tr>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">10:15-10:35</td>
+                                <td><strong>赞助单位主题报告 “华大九天：一站式EDA及相关服务提供商”&nbsp;</strong><br></td>
+                                <td><strong>报告人：周振亚</strong><br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">10:35-10:55</td>
+                                <td><strong>赞助单位主题报告 “燧原张量浮点异构加速芯片---助力算法开发与实现”&nbsp;</strong><br></td>
+                                <td><strong>报告人：袁永清</strong><br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>小型专题研讨会1. 开源数学软件（组织者：刘伟峰）<br></th>
+                                <th>主持人：安恒斌</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width: 105px;">时间</th>
+                                <th>报告人</th>
+                                <th>报告题目</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">10:55-11:15</td>
+                                <td>徐小文（北京应用物理与计算数学研究所）</td>
+                                <td>并行代数多重网格解法器JXPAMG介绍</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;">11:15-11:35</td>
+                                <td>张晨松（中国科学院数学与系统科学研究院）</td>
+                                <td>FASP线性解法器软件介绍</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;">11:35-11:55</td>
+                                <td>崔涛（中国科学院数学与系统科学研究院）</td>
+                                <td>PHG并行自适应有限元软件平台介绍</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;">11:55-12:15</td>
+                                <td>刘伟峰（中国石油大学（北京））</td>
+                                <td>PanguLU和BeidouBLAS：异构平台上的稀疏LU分解和稀疏BLAS开源软件包</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">12:15</td>
+                                <td><strong>午餐</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>主题报告2. 基础数学库性能优化<br></th>
+                                <th>主持人：谭光明</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width: 105px;text-align: center;">时间</th>
+                                <th>报告人</th>
+                                <th>报告题目</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">14:00-14:20</td>
+                                <td>何鑫（中国科学院计算技术研究所）</td>
+                                <td>面向曙光超算系统的基础数学软件介绍</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">14:20-14:40</td>
+                                <td>阳王东（湖南大学）</td>
+                                <td>基础数学库自适应性能优化</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">14:40-15:00</td>
+                                <td>方建滨（国防科技大学）</td>
+                                <td>thSPARSE：面向天河超算系统的稀疏矩阵运算库设计与优化</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">15:00-15:20</td>
+                                <td>牛宇瑶（中国石油大学（北京））</td>
+                                <td>BeidouBLAS：一个分块的稀疏线性代数子程序开源软件包</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">15:20-15:40</td>
+                                <td>薛巍（清华大学）</td>
+                                <td>swSparse v2.0的设计与优化实现</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">15:40-16:00</td>
+                                <td>胡少亮（北京应用物理与计算数学研究所）</td>
+                                <td>数值代数解法器库JPSOL及其在工业仿真 APP中的应用</td>
+                            </tr>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">16:00-16:20</td>
+                                <td><strong>茶歇</strong></td>
+                            </tr>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>主题报告3. 多重网格与区域分解<br></th>
+                                <th>主持人：张晨松</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width: 105px;">时间</th>
+                                <th>报告人</th>
+                                <th>报告题目</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">16:20-16:40</td>
+                                <td>王俊仙（湘潭大学）</td>
+                                <td>Hermite 正定变分问题的基于约束能量极小粗空间的两水平重叠 Schwarz 预条件子</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;">16:40-17:00</td>
+                                <td>彭洁（华南师范大学）</td>
+                                <td>一种求解对流扩散方程稳定化有限元离散系统的自适应BDDC预条件子</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;">17:00-17:20</td>
+                                <td>刘笑（北京应用物理与计算数学研究所）</td>
+                                <td>面向多尺度M矩阵的基于代数界面的代数多重网格法光滑子</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">17:20-18:20</td>
+                                <td><strong>开放讨论1. 解法器算法与优化的人才培养（组织者：刘伟峰）</strong><br></td>
+                                <td><strong>主持人：徐小文</strong><br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">18:20-20:30</td>
+                                <td><strong>SolverChallenge 颁奖晚宴</strong><br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="text-align: center;color: var(--bs-white);font-weight: bold;font-size: 26px;">2021年11月14日 第三天<br></p>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>主题报告4. 迭代方法<br></th>
+                                <th>主持人：钟柳强</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width: 105px;text-align: center;">时间</th>
+                                <th>报告人</th>
+                                <th>报告题目</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">8:30-8:50</td>
+                                <td>荆燕飞（电子科技大学）</td>
+                                <td>A Recycling Block Krylov Solver for Linear Systems</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">8:50-9:10</td>
+                                <td>李胜国（国防科技大学）</td>
+                                <td>A Hybrid Algorithm for Solving Sequences of Symmetric Eigenvalue Problems</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">9:10-9:30</td>
+                                <td>贾晓伟（北京应用物理与计算数学研究所）</td>
+                                <td>漂移扩散方程非线性迭代求解的一种初值选取方法</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">9:30-9:50</td>
+                                <td>徐达强（电子科技大学）</td>
+                                <td>基于Simpler GMRES思想和重启参数自适应技术的GCRO-DR方法</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">9:50-10:10</td>
+                                <td>龚禾林（中国核动力研究设计院）</td>
+                                <td>The Optimum of EIM Magic Points and the Least-Squares Form</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">10:10-10:30</td>
+                                <td>谷同祥（北京应用物理与计算数学研究所）</td>
+                                <td>高效高精度求和与点积算法研究</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">10:30-10:50</td>
+                                <td><strong>茶歇</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>主题报告5. 稀疏直接法性能优化<br></th>
+                                <th>主持人：冯春生</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width: 105px;text-align: center;">时间</th>
+                                <th>报告人</th>
+                                <th>报告题目</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr></tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">10:50-11:10</td>
+                                <td>付旭（中国石油大学（北京））</td>
+                                <td>PanguLU：一个面向异构分布式平台的开源直接法解法器</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">11:10-11:30</td>
+                                <td>刘侃（清华大学）</td>
+                                <td>面向新一代申威众核架构的稀疏LU分解性能优化</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;text-align: center;">11:30-11:50</td>
+                                <td>张经文（中国石油大学（北京））</td>
+                                <td>稀疏右手边稀疏三角解加速算法</td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">11:50</td>
+                                <td><strong>午餐</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>小型专题研讨会2. AI先进计算与科学计算的融合（组织者：薛巍）<br></th>
+                                <th>主持人：薛巍</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width: 105px;">时间</th>
+                                <th>报告人</th>
+                                <th>报告题目</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">14:00-14:20</td>
+                                <td>宋振亚（自然资源部第一海洋研究所）</td>
+                                <td>机器学习在海洋数值模拟中的应用初探</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;">14:20-14:40</td>
+                                <td>贾伟乐（中国科学院计算技术研究所）</td>
+                                <td>HPC+AI+物理模型在第一性原理分子动力学中的应用</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;">14:40-15:00</td>
+                                <td>刘沙（国家并行中心）</td>
+                                <td>神威新一代超算系统人工智能支撑软件与应用</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;">15:00-15:20</td>
+                                <td>邹海峰（北京应用物理与计算数学研究所）</td>
+                                <td>AutoAMG(θ)：一种基于ML的AMG算法参数自动调优框架</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;">15:20-15:40</td>
+                                <td>金洲（中国石油大学（北京））</td>
+                                <td>面向忆阻器存算一体架构的科学计算</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 105px;">15:40-16:00</td>
+                                <td>李丹丹（北京邮电大学）</td>
+                                <td>求解Toeplitz系统的渐进量子算法</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">16:00-16:20</td>
+                                <td><strong>茶歇</strong></td>
+                            </tr>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">16:20-17:00</td>
+                                <td><strong>开放讨论2. 科学计算与人工智能融合应用与方法</strong><br></td>
+                                <td style="text-align: center;"><strong>主持人：薛巍</strong><br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">17:00-18:00</td>
+                                <td><strong>开放讨论3：SolverChallenge 论坛</strong><br></td>
+                                <td style="text-align: center;"><strong>主持人：崔涛</strong><br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">18:00-18:20</td>
+                                <td><strong>闭幕式暨Solver 2022计划</strong><br></td>
+                                <td style="text-align: center;"><strong>主持人：徐小文</strong><br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 105px;">18:20</td>
+                                <td><strong>晚餐</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="organization" class="content-section" style="background: var(--bs-success);padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;">组织委员会</h2>
+                    <p style="text-align: left;">
+                        徐小文（北京应用物理与计算数学研究所）
+                        <br>张晨松（中国科学院数学与系统科学研究院）
+                        <br>舒&nbsp; &nbsp; 适（湘潭大学）
+                        <br>谭光明（中国科学院计算技术研究所）
+                        <br>刘伟峰（中国石油大学（北京））
+                    </p>
+                    <h2 style="margin-bottom: 15px;">本地组织委员会</h2>
+                    <p style="text-align: left;">
+                        薛&nbsp; &nbsp; 巍（清华大学、青海大学）
+                        <br>
+                        黄建强（青海大学）
+                        <br>
+                        刘志强（青海大学）
+                        <br>
+                        薛振东（青海大学）
+                        <br>
+                        张玉安（青海大学）
+                        <br>
+                        刘晓静（青海大学）
+                        <br>
+                        曹腾飞（青海大学）
+                        <br>
+                        张小丹（青海大学）
+                        <br>
+                        边浩东（青海大学）
+                    </p>
+                    <h2 style="margin-bottom: 15px;">程序委员会共同主席</h2>
+                    <p style="text-align: left;">
+                        安恒斌 （北京应用物理与计算数学研究所）
+                        <br>冯春生 （湘潭大学）
+                        <br>谢和虎 （中国科学院数学与系统科学研究院）
+                    </p>
+                    <h2 style="margin-bottom: 15px;">程序委员会委员</h2>
+                    <p style="text-align: left;">
+                        安恒斌（北京应用物理与计算数学研究所）
+                        <br>陈荣亮（中国科学院深圳先进技术研究院）
+                        <br>崔&nbsp; &nbsp; 涛（中国科学院数学与系统科学研究院）
+                        <br>冯春生（湘潭大学）
+                        <br>谷同祥（北京应用物理与计算数学研究所）
+                        <br>何&nbsp; &nbsp; 鑫（中国科学院计算技术研究所）
+                        <br>胡少亮（中物院高性能数值模拟软件中心）
+                        <br>荆燕飞（电子科技大学）
+                        <br>李胜国（国防科技大学）
+                        <br>刘伟峰（中国石油大学（北京））
+                        <br>舒&nbsp; &nbsp; 适（湘潭大学）
+                        <br>谭光明（中国科学院计算技术研究所）
+                        <br>谢和虎（中国科学院计算数学所）
+                        <br>徐小文（北京应用物理与计算数学研究所）
+                        <br>薛&nbsp; &nbsp; 巍（清华大学）
+                        <br>岳孝强（湘潭大学）
+                        <br>张晨松（中国科学院计算数学研究所）
+                        <br>钟柳强（华南师范大学）
+                        <br>周振亚（北京华大九天科技股份有限公司）
+                        <br>朱圣鑫（北京师范大学/北师港浸大(UIC)）
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center content-section" id="info" style="background: var(--bs-blue);padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;">会议酒店</h2>
+                    <br>
+                    <h4 style="margin-bottom: 15px;">(1) 青海大学专家公寓</h4>
+                    <img style="background: url(&quot;assets/img/g1.png&quot;);max-width: 50%;" src="assets/img/g1.png">
+                    <p style="text-align: center;">
+                        <br>酒店位置：青海大学
+                        <br>电话：XXX（微信同号） XXX
+                        <br>预定方式：预定时声明参加Solver23会议、注册交费凭证
+                        <br>标间（102间、价格待定）
+                        <br>大床房（6间、价格待定）
+                        <br>小套间（35间、价格待定）
+                        <br>大套间（9间、价格待定）
+                    </p>
+                    <br>
+                    <h4 style="margin-bottom: 15px;">(2) 青海宾馆</h4>
+                    <img style="background: url(&quot;assets/img/g2.png&quot;);max-width: 50%;" src="assets/img/g2.png">
+                    <p style="text-align: center;">
+                        <br>酒店位置：西宁市城西区黄河路158号
+                        <br>电话：XXX（微信同号） XXX
+                        <br>预定方式：预定时声明参加Solver23会议、注册交费凭证
+                        <br>高级大床房价格：820元/晚（含早餐）
+                        <br>豪华大床房价格：960元/晚（含早餐）
+                    </p>
+                    <br>
+                    <h4 style="margin-bottom: 15px;">(3) 西宁万豪万枫酒店</h4>
+                    <img style="background: url(&quot;assets/img/g3.png&quot;);max-width: 50%;" src="assets/img/g3.png">
+                    <p style="text-align: center;">
+                        <br>酒店位置：西宁市城北区宁张路111号
+                        <br>电话：XXX（微信同号） XXX
+                        <br>预定方式：预定时声明参加Solver23会议、注册交费凭证
+                        <br>标间价格：待定
+                        <br>大床房价格：待定
+                    </p>
+                    <div class="col-lg-8 mx-auto" style="width: 52%;">
+                        <h2 style="margin-bottom: 15px;">交通方式</h2>
+                        <br>
+                        <h4>1. 前往青海大学</h4>
+                        <p style="text-align: left;">
+                            （1）从 <strong style="color: yellow;">西宁曹家堡机场</strong>（起点）至 <strong style="color: yellow;">青海大学</strong>（终点）
+                            <br>
+                            <br>
+                            <strong>路线1：</strong> Solver23组委会统一安排大巴接送至青海大学
+                            <br>
+                            <strong>路线2（自行前往）：</strong> 先乘机场大巴至 <strong style="color: yellow;">中心广场</strong> 下车（大巴车票21元/人），再打车至青海大学（大约14公里，30分钟车程）
+                            <br>
+                            <br>
+                            （2）从 <strong style="color: yellow;">西宁火车站</strong>（起点）至 <strong style="color: yellow;">青海大学</strong>（终点）
+                            <br>
+                            <br>
+                            <strong>路线1：</strong> Solver23组委会统一安排大巴接送至青海大学
+                            <br>
+                            <strong>路线2（自行前往）：</strong>打车至青海大学（大约17公里，30分钟车程）
+                            <br>
+                            <strong>路线3（自行前往）：</strong> 乘 <strong style="color: yellow;">11 路公交车</strong> 直达青海大学
+                        </p>
+                        <br>
+                        <h4>2. 前往青海宾馆</h4>
+                        <p style="text-align:left;">
+                            （1）从 <strong style="color:aquamarine;">西宁曹家堡机场</strong>（起点）至 <strong style="color:aquamarine;">青海宾馆</strong>（终点）
+                            <br>
+                            <br>
+                            <strong>路线1：</strong> Solver23组委会统一安排大巴接送至青海宾馆
+                            <br>
+                            <strong>路线2（自行前往）：</strong> 先乘机场大巴至 <strong style="color:aquamarine;">中心广场</strong> 下车（大巴车票21元/人），再打车或步行至青海宾馆（大约2公里）
+                            <br>
+                            <br>
+                            （2）从 <strong style="color:aquamarine;">西宁火车站</strong>（起点）至 <strong style="color:aquamarine;">青海宾馆</strong>（终点）
+                            <br>
+                            <br>
+                            <strong>路线1：</strong> Solver23组委会统一安排大巴接送至青海宾馆
+                            <br>
+                            <strong>路线2（自行前往）：</strong> 打车至青海宾馆（大约6公里，17分钟车程）
+                            <br>
+                            <strong>路线3（自行前往）：</strong> 乘 <strong style="color:aquamarine;">20、32、40、47路公交车</strong> 至青海宾馆
+                        </p>
+                        <br>
+                        <h4>3. 前往西宁万豪万枫酒店</h4>
+                        <p style="text-align:left;">
+                            （1）从 <strong style="color:deeppink;">西宁曹家堡机场</strong>（起点）至 <strong style="color:deeppink;">西宁万豪万枫酒店</strong>（终点）
+                            <br>
+                            <br>
+                            <strong>路线1：</strong> Solver23组委会统一安排大巴接送至西宁万豪万枫酒店
+                            <br>
+                            <strong>路线2（自行前往）：</strong> 先乘机场大巴至 <strong style="color:deeppink;">中心广场</strong> 下车（大巴车票21元/人），再打车至西宁万豪万枫酒店（大约8公里，20分钟车程）
+                            <br>
+                            <br>
+                            （2）从 <strong style="color:deeppink;">西宁火车站</strong>（起点）至 <strong style="color:deeppink;">西宁万豪万枫酒店</strong>（终点）
+                            <br>
+                            <br>
+                            <strong>路线1：</strong> Solver23组委会统一安排大巴接送至青海宾馆
+                            <br>
+                            <strong>路线2（自行前往）：</strong> 打车至西宁万豪万枫酒店（大约12公里，25分钟车程）
+                            <br>
+                            <strong>路线3（自行前往）：</strong> 乘 <strong style="color:deeppink;">1、11路公交车</strong> 至西宁万豪万枫酒店
+                        </p>
+                    </div>
+
+                    <h2>会议注册</h2>
+                    <p style="text-align: center;">
+                        注册地址：<a href="https://register.solver-conference.cn/#/" target="_blank">https://register.solver-conference.cn/#/</a>
+                        <br>
+                        会议注册费为 XXX 元/人，学生 XXX 元/人。
+                        <br>
+                        注册截止时间为 XXX 月 XXX 日。
+                        <br>
+                    </p>
+
+                    <h2>参会信息</h2>
+                    <p style="text-align: center;">
+                        <a href="#" style="text-decoration: none;" target="_blank"><span style="font-size: 20px; ">SOLVER23会议日程</span></a>
+                        <br>
+                        <a href="#" style="text-decoration: none;" target="_blank"><span style="font-size: 20px; ">SOLVER23会议通知</span></a>
+                        <br>
+                        <a href="#" style="text-decoration: none;" target="_blank"><span style="font-size: 20px; ">SOLVER23会议邀请函</span></a>
+                        <br>
+                        <a href="#" style="text-decoration: none;" target="_blank"><span style="font-size: 20px;">SOLVER23会议海报</span></a>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center content-section" id="archive" style="background: var(--bs-purple);padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;">往届会议</h2>
+                    <p style="text-align: center;">
+                        <a href="http://www.solver-conference.cn/" style="text-decoration: none;" target="_blank">2022年7月20日－7月24日 SOLVER22&nbsp;中国·重庆</a>
+                        <br>
+                        <a href="http://math.xtu.edu.cn/solver/2021/index.html" style="text-decoration: none;" target="_blank">2021年12月24日－12月27日 SOLVER21&nbsp;新疆·克拉玛依</a>
+                        <br>
+                        <a href="http://math.xtu.edu.cn/solver/2020/index.html" style="text-decoration: none;" target="_blank">2020年8月6日－8月8日 SOLVER20&nbsp;江苏·苏州</a>
+                        <br>
+                        <a href="http://math.xtu.edu.cn/solver/2019/index.html" style="text-decoration: none;" target="_blank">2019年8月13日－8月16日 SOLVER19 云南·昆明</a>
+                        <br>
+                        <a href="http://math.xtu.edu.cn/solver/2018/index.html" style="text-decoration: none;" target="_blank">2018年6月22日－6月25日&nbsp;SOLVER18 湖南·韶山</a>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="map-clean"></div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright © 解法器快速算法及应用研讨会</p><a href="https://beian.miit.gov.cn/" target="blank">京ICP备2021019551号-2</a>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/grayscale.js"></script>
+</body>
+
+</html>
