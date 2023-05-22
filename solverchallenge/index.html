@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Article-Cards.css">
+    <link rel="stylesheet" href="assets/css/Data-Table-1.css">
+    <link rel="stylesheet" href="assets/css/Data-Table.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Table-Style-01-1.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Table-Style-01.css">
+    <link rel="stylesheet" href="assets/css/untitled-1.css">
+    <link rel="stylesheet" href="assets/css/untitled-2.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77" style="background: var(--bs-red);">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+        <div class="container"><a class="navbar-brand" href="#">SolverChallenge</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item nav-link"><a class="nav-link active" href="#about-solverchallenge" style="background: rgba(255,255,255,0);">关于竞赛</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#scheme">竞赛方案</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#process">竞赛流程</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#competition">竞赛赛题</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#organization">竞赛组织</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#contact">联系方式</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="../index.html">Solver23</a></li>
+                    <!-- <li class="nav-item nav-link"><a class="nav-link" href="#contact">竞赛结果</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background: url(&quot;assets/img/g1.jpg&quot;) repeat;background-size: cover;">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading" style="font-size: 45px;">第三届线性解法器算法与性能优化竞赛</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center content-section" id="about-solverchallenge" style="padding: 100px 0px;background: #CAD2C5;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 style="color: var(--bs-dark);">关于SolverChallenge</h2>
+                    <p style="text-align: left;color: var(--bs-dark);">&nbsp; &nbsp; &nbsp; &nbsp; SolverChallenge竞赛是解法器快速算法及应用研讨会（SOLVER会议）的一项特色活动，由SOLVER会议组委会主办，每年举行一次。竞赛针对实际应用中抽取出来的线性代数问题，要求参赛队伍在一定约束条件下通过算法设计与性能调优等手段对这些系统进行数值求解，并基于不同标准从多个维度对所获结果进行评价。首届竞赛（SolverChallenge21）将与第四届解法器快速算法及应用研讨会（<a href="https://www.solver-conference.cn/solver21/" target="blank">SOLVER21</a>，克拉玛依）同期启动，欢迎解法器领域的同行及研究生报名参赛。<br><br></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);">竞赛背景</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-dark);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; 线性代数方程组&nbsp;<em>Ax=b&nbsp;</em>是科学与工程计算领域面临的共性问题，求解该类方程的解法器已成为很多应用软件的性能瓶颈。当前，国产高性能计算机的峰值性能已达每秒十亿亿次量级，很快将进入百亿亿次（E级）计算时代。这些国际领先的超级计算机为我国科学与工程计算应用迈进超大规模计算时代、实现更高精细的数值模拟成为可能。然而，超大规模计算给解法器算法设计与性能优化带来巨大挑战。一方面，超大规模计算必然是求解越来越复杂的实际应用问题，更加精细的物理建模蕴含着越来越复杂的应用特征（如：多时空尺度、多物理耦合、多介质、复杂流动、强非线性强间断、长时间积分等），从而导致现有解法器算法的计算复杂度急剧增长。另一方面，随着计算机硬件性能的提升，超级计算机呈现“多级嵌套海量并行、异构众核加速”的复杂体系结构特征，导致解法器算法的实现效率急剧下降。这种“应用与机器”的双重复杂性导致解法器越来越成为实际数值模拟应用的性能瓶颈，如何设计能同时匹配实际应用特征和机器体系结构特征的快速算法与性能优化技术是当前亟待解决的关键问题。<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);">竞赛宗旨</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-dark);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; SolverChallenge竞赛瞄准我国重要行业应用中的解法器瓶颈问题，赛题源于实际应用的需求，并根据每年的需求和优化情况持续更新。一方面，希望通过检验参赛队伍的算法与软件对这些问题的适应性，从中筛选出合适的算法及解法器策略，为应用提供新的思路与解决途径，提升我国重要行业应用中自主软件的解法器计算能力。另一方面，希望通过实际问题的牵引，吸引更多科研人员开展应用驱动的解法器算法创新与性能优化研究，同时培养具有交叉学科背景的优秀青年研究人员和研究生。<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="scheme" class="content-section" style="background: #52796F;padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;color: var(--bs-white);">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-light);">竞赛方案与规则</h2>
+                    <h2 style="margin-bottom: 15px;color: var(--bs-white);text-align: left;font-size: 20.128px;">竞赛方案</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; 竞赛组委会提供10套来源于不同应用领域的线性系统（每套线性系统包括矩阵A和右端向量b、存储格式的描述、求解约束条件等），参赛选手针对这10套系统进行求解，不限制求解方法（即迭代法、直接法或混合方法均可），也不限制解法器软件包的来源。竞赛网站将提供程序中输入、输出与计时部分，并开放接口供参赛选手提交自己的执行代码（若是闭源的，则提交链接文件）。最终将使用不同的右端向量b测试，其求解效果（速度、精度、浮点运算次数等）将作为本竞赛奖项评判标准。<br><br></p>
+                    <h2 style="margin-bottom: 15px;color: var(--bs-white);text-align: left;font-size: 20.128px;">竞赛规则</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; <br><strong>&nbsp; &nbsp; &nbsp; &nbsp; 硬件环境：</strong>竞赛指定硬件作为程序性能的测试平台，参赛选手有权使用竞赛测试平台，但使用时间将被限制，在使用时间内参赛选手可以配置环境与测试程序。在竞赛提供的平台测出的成绩会作为参赛选手的最终成绩。<br><br>&nbsp; &nbsp; &nbsp; &nbsp; 指定硬件包括：<br><br>&nbsp; &nbsp; &nbsp; &nbsp; 商用CPU（Intel Xeon Gold 6230, 4路共80核，频率2.1 GHz, 内存384 GB DDR4，带宽511 GB/s）；<br>&nbsp; &nbsp; &nbsp; &nbsp; 商用GPU（NVIDIA A100，6912 CUDA核，频率1.4 GHz，显存40 GB HBM2，带宽1555 GB/s）。<br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>软件环境：</strong>准许使用任何软件包参与竞赛，但是在评分时会考虑所使用软件包的自主性和创新性。<br><br>&nbsp; &nbsp; &nbsp; &nbsp;<strong> 参赛队伍：</strong>竞赛面向本科生与研究生开放，学生采用自愿组合方式组成参赛队伍。每支队伍人数不超过3人，且应指定1-2名指导教师。<br><br></p>
+                    <h2 style="margin-bottom: 15px;color: var(--bs-white);text-align: left;font-size: 20.128px;">文档内容规范</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; 算法设计实现涉及到的技术栈：包含采用的硬件、系统环境、软件；<br>&nbsp; &nbsp; &nbsp; &nbsp; 算法详细内容：包含采用的算法、参数；<br>&nbsp; &nbsp; &nbsp; &nbsp; 总体思路：包含问题的简要分析、求解策略；<br>&nbsp; &nbsp; &nbsp; &nbsp; 结果分析；<br>&nbsp; &nbsp; &nbsp; &nbsp; 遇到的问题。<br><br></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-white);">评分依据</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>求解速度（到解墙上时间）：</strong>评分标准同时考虑求解的线性系统个数与性能。每个系统满分10分，能正确解出且性能最优者得满分，其他选手的成绩依次顺延，未能解出者不得分。例如：求解某一系统时，排名第一的参赛小组用时120ms、排名第二的参赛小组用时240ms、排名第三的参赛小组未解出,则第一参赛小组得10分，第二参赛小组得5分，第三参赛小组得0分。所有10组系统得分累加得到总成绩。<br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>浮点运算次数：</strong>使用性能测试软件记录选手程序的浮点运算次数，目的在于考察选手从数值算法的角度进行算法创新与改进。每组矩阵满分10分，浮点运算次数最优的选手得满分，其他选手按比例顺延，未解出者不得分。所有10组系统得分累加得到总成绩。<br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>精度：</strong>确保求解出的解向量x满足相应的精度要求。<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-white);">奖项设定</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; 竞赛专委会将根据参赛作品的创新性、完成度、文档质量、难度以及答辩表现等情况进行评奖。<br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>基础奖项：</strong>按照求解速度与浮点运算次数得分，分别设特等奖（不超1名），一等奖（不超过15%）、二等奖（不超过30%）、三等奖若干；<br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>特别奖项：</strong>创新奖（在算法或性能优化方法方面有独特创新）、单系统奖（对于某一个线性系统有独特贡献）等；<br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>企业特别奖：</strong>赞助厂商可根据自己的需求评选企业特别奖。<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="process" class="content-section" style="background: #354F52;padding: 100px 0px;">
+        <div class="container">
+            <div class="col-lg-8 mx-auto" style="color: var(--bs-white);">
+                <h1 style="color: var(--bs-white);text-align: center;">竞赛流程</h1>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="color: var(--bs-white);">事项</th>
+                                <th style="color: var(--bs-white);">时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="color: var(--bs-white);">开启报名通道</td>
+                                <td style="color: var(--bs-white);">5月10日<br></td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--bs-white);">公布赛题和开放测试平台<br></td>
+                                <td style="color: var(--bs-white);">5月25日<br></td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--bs-white);">开通参赛选手提交程序通道<br></td>
+                                <td style="color: var(--bs-white);">6月10日<br></td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--bs-white);">关闭程序提交通道<br></td>
+                                <td style="color: var(--bs-white);">7月15日<br></td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--bs-white);">初评、公布入围名单<br></td>
+                                <td style="color: var(--bs-white);">7月25日<br></td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--bs-white);">在克拉玛依会议上进行答辩、颁奖<br></td>
+                                <td style="color: var(--bs-white);">7月30-8月1日<br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <p></p>
+                    <h2 style="margin-bottom: 15px;color: var(--bs-white);">竞赛截止报名时间</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; 2021 年 6 月 30 日<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center content-section" id="competition" style="background: #BE95C4;padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);"><strong>第一届解法器算法及优化竞赛（SolverChallenge21）赛题</strong></h2>
+                    <p>百度网盘<a href="https://pan.baidu.com/s/1DfuIhlEBODF4PkAug3SQ-Q" target="_blank">下载链接</a>&nbsp;提取码：bhrm</p><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_01_A_plot.png">
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td">赛题名称</th>
+                                    <th id="style_td"><strong>solverchallenge21_01</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td">阶数非零元数</td>
+                                    <td id="style_td_7">2,097,152</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">非零元数</td>
+                                    <td id="style_td">14,581,760</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">应用领域</td>
+                                    <td id="style_td_7">激光聚变</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_7">PDE：辐射流体力学三维光子方程；<br>网格类型：结构网格；<br>网格规模： 128×128×128；<br>离散格式：有限体积7点格式。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">MD5</td>
+                                    <td id="style_td_7">267e523efb310c31<br>b6fa23a3804c4da6</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
+                                    <td id="style_td_7">&lt; 1e-10</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
+                                    <td id="style_td_7" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">&lt; 1GB<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-1" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
+                                    <td id="style_td_-55" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">HiNAS-M队（2021年）<br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_02_A_plot.png">
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td">赛题名称</th>
+                                    <th id="style_td_7"><strong>solverchallenge21_02</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-3">阶数非零元数</td>
+                                    <td id="style_td_-1">6,291,456</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-4">非零元数</td>
+                                    <td id="style_td-5">52,133,888&nbsp;&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-6">应用领域</td>
+                                    <td id="style_td_-2">激光聚变</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-7">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-3">PDE：辐射流体力学三维三温方程；<br>网格类型：结构网格；<br>网格规模： 128×128×128；<br>离散格式：有限体积7点格式</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-8">MD5</td>
+                                    <td id="style_td_-4">de21e4d00623cd41<br>a95182fd447867f0</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-9">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
+                                    <td id="style_td_-5">&lt; 1e-10</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-10" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
+                                    <td id="style_td_-6" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">&lt; 3GB<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-2" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
+                                    <td id="style_td_-56" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">GMW队（2021年）<br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_03_A_plot.png">
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-81">赛题名称</th>
+                                    <th id="style_td-82"><strong>solverchallenge21_03</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-83">阶数非零元数</td>
+                                    <td id="style_td_-49">83,073</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-84">非零元数</td>
+                                    <td id="style_td-85">2,826,927</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-86">应用领域</td>
+                                    <td id="style_td_-50">工程力学</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-87">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-51">PDE：离心机装置接触力学问题线弹性方程；<br>离散格式：一阶节点有限元，每个节点定义三个自由（位移三个分量）；<br>特点：带有复杂约束条件。&nbsp;&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-88">MD5</td>
+                                    <td id="style_td_-52">bb24e4bd83ae1def<br>230b3c47e5c36a71</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-89">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
+                                    <td id="style_td_-53">&lt; 1e-8</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-90" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
+                                    <td id="style_td_-54" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-91" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
+                                    <td id="style_td_-57" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">GMW队（2021年）<br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_04_A_plot.png">
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-71">赛题名称</th>
+                                    <th id="style_td-72"><strong>solverchallenge21_04</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-73">阶数非零元数</td>
+                                    <td id="style_td_-43">2,081,541</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-74">非零元数</td>
+                                    <td id="style_td-75">71,033,481</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-76">应用领域</td>
+                                    <td id="style_td_-44">工程力学</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-77">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-45">PDE：航空发动机整机静力学模拟接触力学线弹性方程；<br>离散格式：一阶节点有限元，每个节点定义三个自由（位移三个分量）；<br>特点：带有复杂约束条件。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-78">MD5</td>
+                                    <td id="style_td_-46">468ed4124ffa647d<br>2681132456fa0eb0</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-79">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
+                                    <td id="style_td_-47">&lt; 1e-8</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-80" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
+                                    <td id="style_td_-48" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-92" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
+                                    <td id="style_td_-58" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">GMW队（2021年）<br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_05_A_plot.png">
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-61">赛题名称</th>
+                                    <th id="style_td-62"><strong>solverchallenge21_05</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-63">阶数非零元数</td>
+                                    <td id="style_td_-37">225,800</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-64">非零元数</td>
+                                    <td id="style_td-65">3,591,872</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-66">应用领域</td>
+                                    <td id="style_td_-38">电子学系统</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-67">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-39">PDE：滤波器电磁场仿真时谐麦克斯韦方程；<br>离散格式：一阶Nedelec有限元，每条边一个自由度；<br>特点：离散矩阵为复型系统。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-68">MD5</td>
+                                    <td id="style_td_-40">07821cd81df9a41c<br>581db1c15a0b8b6d</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-69">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
+                                    <td id="style_td_-41">&lt; 1e-8</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-70" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
+                                    <td id="style_td_-42" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-93" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
+                                    <td id="style_td_-59" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">SolverChallenge-XTU队（2021年）<br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_06_A_plot.png">
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-51">赛题名称</th>
+                                    <th id="style_td-52"><strong>solverchallenge21_06</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-53">阶数非零元数</td>
+                                    <td id="style_td_-31">2,188,844</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-54">非零元数</td>
+                                    <td id="style_td-55">23,524,309</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-56">应用领域</td>
+                                    <td id="style_td_-32">油藏模拟</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-57">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-33">模型：油水两相黑油模型；<br>PDE：非线性耦合渗流方程；<br>离散格式：块中心有限差分，每个网格定义两个自由度（一个压力和一个饱和度变量）；<br>特点：矩阵为块稀疏结构。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-58">MD5</td>
+                                    <td id="style_td_-34">ac1718745d68660b<br>7bb7823d8aa8d748</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-59">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
+                                    <td id="style_td_-35">&lt; 1e-4</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-60" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
+                                    <td id="style_td_-36" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-94" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
+                                    <td id="style_td_-60" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">SolverChallenge-XTU队（2021年）<br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_07_A_plot.png">
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-41">赛题名称</th>
+                                    <th id="style_td-42"><strong>solverchallenge21_07</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-43">阶数非零元数</td>
+                                    <td id="style_td_-25">431,358</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-44">非零元数</td>
+                                    <td id="style_td-45">2,586,755</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-46">应用领域</td>
+                                    <td id="style_td_-26">油藏模拟</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-47">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-27">模型：三相黑油模型；<br>PDE：非线性耦合渗流方程；<br>离散格式：块中心有限差分，每个网格定义三个自由度（一个压力和两个饱和度变量）；<br>特点：矩阵为块稀疏结构。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-48">MD5</td>
+                                    <td id="style_td_-28">b0ab398f7e11c670<br>834cbf0d52573491</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-49">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
+                                    <td id="style_td_-29">&lt; 1e-5</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-50" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
+                                    <td id="style_td_-30" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,1);">无<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-95" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
+                                    <td id="style_td_-61" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">SolverChallenge-XTU队（2021年）<br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_08_A_plot.png">
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-31">赛题名称</th>
+                                    <th id="style_td-32"><strong>solverchallenge21_08</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-33">阶数非零元数</td>
+                                    <td id="style_td_-19">4,504,770</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-34">非零元数</td>
+                                    <td id="style_td-35">60,769,595</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-36">应用领域</td>
+                                    <td id="style_td_-20">集成电路</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-37">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-21">集成电路瞬态仿真方程；<br>电路类型：PHY接口；<br>电路工艺：16nm。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-38">MD5</td>
+                                    <td id="style_td_-22">658ac6cde06ee754<br>3485bbf36a1c0230</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-39">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
+                                    <td id="style_td_-23">&lt; 1e-8</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-40" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,1);">求解过程最大内存要求<br></td>
+                                    <td id="style_td_-24" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,1);">无<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-96" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
+                                    <td id="style_td_-62" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">SolverChallenge-XTU队（2021年）<br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_09_A_plot.png">
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-21">赛题名称</th>
+                                    <th id="style_td-22"><strong>solverchallenge21_09</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-23">阶数非零元数</td>
+                                    <td id="style_td_-13">7,785,500</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-24">非零元数</td>
+                                    <td id="style_td-25">117,784,837&nbsp;&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-26">应用领域</td>
+                                    <td id="style_td_-14">集成电路</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-27">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-15">集成电路瞬态仿真方程；<br>电路类型：DAC接口；<br>电路工艺：7nm。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-28">MD5</td>
+                                    <td id="style_td_-16">24fb791736e97795<br>24479f62ff9e8baf</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-29">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
+                                    <td id="style_td_-17">&lt; 1e-8</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-30" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,1);">求解过程最大内存要求<br></td>
+                                    <td id="style_td_-18" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-97" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
+                                    <td id="style_td_-63" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">SolverChallenge-XTU队（2021年）<br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_10_A_plot.png">
+                    <div class="table-responsive" style="margin-bottom: 50px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th id="style_td-11">赛题名称</th>
+                                    <th id="style_td-12"><strong>solverchallenge21_10</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="style_td-13">阶数非零元数</td>
+                                    <td id="style_td_-7">418,718</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-14">非零元数</td>
+                                    <td id="style_td-15">921,708,586</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-16">应用领域</td>
+                                    <td id="style_td_-8">集成电路</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-17">来源与背景描述&nbsp;&nbsp;</td>
+                                    <td id="style_td_-9">射频电路谐波平衡仿真方程；<br>电路类型：VCO；<br>电路工艺：28nm；<br>特点：离散矩阵为复型系统。</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-18">MD5</td>
+                                    <td id="style_td_-10">8610e400c7b86d6c<br>75482c1c48b7dec9</td>
+                                </tr>
+                                <tr>
+                                    <td class="float-none" id="style_td-19">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
+                                    <td id="style_td_-11">&lt; 1e-8</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-20" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
+                                    <td id="style_td_-12" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td-98" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
+                                    <td id="style_td_-64" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">HiNAS-M队（2021年）<br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="organization" class="content-section" style="background: #E0B1CB;padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);">竞赛组织</h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-dark);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; 主办单位：解法器快速算法及应用研讨会组织委员会<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;承办单位：中国石油大学（北京）信息科学与工程学院，湖南国家应用数学中心<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);">竞赛评奖委员会共同主席</h2>
+                    <p style="text-align: left;color: var(--bs-dark);">徐小文（北京应用物理与计算数学研究所）<br>张晨松（中国科学院数学与系统科学研究院）<br>舒&nbsp; &nbsp; 适（湘潭大学）<br>谭光明（中国科学院计算技术研究所）<br>刘伟峰（中国石油大学（北京））</p>
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);">竞赛评奖委员会委员</h2>
+                    <p style="text-align: left;color: var(--bs-dark);">安恒斌（北京应用物理与计算数学研究所）<br>崔&nbsp; &nbsp; 涛（中国科学院数学与系统科学研究院）<br>冯春生（湘潭大学）<br>刘伟峰（中国石油大学（北京））<br>舒&nbsp; &nbsp; 适（湘潭大学）<br>谭光明（中国科学院计算技术研究所）<br>谢和虎（中国科学院计算数学所）<br>徐小文（北京应用物理与计算数学研究所）<br>薛&nbsp; &nbsp; 巍（清华大学）<br>张晨松（中国科学院计算数学研究所）<br>周振亚（北京华大九天科技股份有限公司）<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="content-section" style="background: #F4ACB7;padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);"><strong>竞赛联系人</strong></h2>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-dark);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>杨德闯：</strong>13141166363 (电话) | 958629957@qq.com (邮箱)<br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>连浩丞：</strong>13261798233 (电话) | 916822670@qq.com (邮箱)<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="contact-1" class="content-section" style="background: #c3bcbd;padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);"><strong>竞赛结果公布</strong><br></h2><figure class="snip1253">
+  <div class="image"><img src="assets/img/SolverChallenge-XTU%20Team（特等奖）.jpg" alt="sample52" /></div>
+  <figcaption>
+    <div class="date"><span class="day">NO</span><span class="month">1</span></div>
+    <h3 style="word-wrap:break-word;word-break:break-all;">SolverChallenge-XTU队</h3>
+    <p>
+      <b>单   位：</b>湘潭大学<br />
+      <b>指导老师：</b>冯春⽣, 岳孝强<br />
+      <b>参赛学生：</b>赵梨，王慧，赵英蒸<br />
+      <b>总分：</b>58.819
+    </p>
+  </figcaption>
+</figure>
+
+
+<figure class="snip1253">
+  <div class="image"><img src="assets/img/GMW队（一等奖）.jpg" alt="sample52" /></div>
+  <figcaption>
+    <div class="date"><span class="day">NO</span><span class="month">2</span></div>
+    <h3>GMW队</h3>
+    <p>
+      <b>单   位：</b>中国科学院数学与系统科学研究院<br />
+      <b>指导老师：</b>郑伟英, 崔涛<br />
+      <b>参赛学生：</b>王⼀甲，穆朋聪，郭仲琨<br />
+      <b>总分：</b>53.484
+    </p>
+  </figcaption>
+
+
+</figure>
+<figure class="snip1253">
+  <div class="image"><img src="assets/img/HiNAS-M队（一等奖）.jpg" alt="sample52" /></div>
+  <figcaption>
+    <div class="date"><span class="day">NO</span><span class="month">3</span></div>
+    <h3>HiNAS-M队</h3>
+    <p>
+      <b>单   位：</b>中国⼯程物理研究院研究⽣院, 南京⼤学, 中物院⾼性能数值模拟中⼼<br />
+      <b>指导老师：</b>胡少亮<br />
+      <b>参赛学生：</b>毛润彰，邓蕴桐，包怡坤<br />
+      <b>总分：</b>26.79
+    </p>
+  </figcaption>
+
+</figure>
+
+<figure class="snip1253">
+  <div class="image"><img src="assets/img/一笑而过队（一等奖）.jpg" alt="sample59" /></div>
+  <figcaption>
+    <div class="date"><span class="day">NO</span><span class="month">4</span></div>
+    <h3>一笑而过队</h3>
+    <p>
+      <b>单   位：</b>中国⼯程物理研究院, 中国科学院数学与系统科学研究院, 中物院⾼性能数值模拟中⼼<br />
+      <b>指导老师：</b>胡少亮<br />
+      <b>参赛学生：</b>邹海峰，李仕哲，刘笑<br />
+      <b>总分：</b>20.76
+    </p>
+  </figcaption>
+
+</figure>
+
+<figure class="snip1253">
+  <div class="image"><img src="assets/img/克拉玛依美食队（一等奖）.jpg" alt="sample59" /></div>
+  <figcaption>
+    <div class="date"><span class="day">NO</span><span class="month">5</span></div>
+    <h3>克拉玛依美食队</h3>
+    <p>
+      <b>单   位：</b>中国⼯程物理研究院研究⽣院, 中物院软件中⼼<br />
+      <b>指导老师：</b>范荣红<br />
+      <b>参赛学生：</b>段晓宇, 胡毅, 王碧翊<br />
+      <b>总分：</b>19.407
+    </p>
+  </figcaption>
+
+</figure>
+
+
+<figure class="snip1253">
+  <div class="image"><img src="assets/img/Communication-avoiding队（一等奖）.jpg" alt="sample59" /></div>
+  <figcaption>
+    <div class="date"><span class="day">NO</span><span class="month">6</span></div>
+    <h3 style="word-wrap:break-word;word-break:break-all;">Communication-avoiding队</h3>
+    <p>
+      <b>单   位：</b>国防科技大学, 北京应用物理与计算数学研究所 <br />
+      <b>指导老师：</b>谷同祥, 姜浩<br />
+      <b>参赛学生：</b>陈琳,何康,雷晓军<br />
+      <b>总分：</b>6.258
+    </p>
+  </figcaption>
+
+</figure>
+
+<figure class="snip1253">
+  <div class="image"><img src="assets/img/算的又快又队（二等奖）%20.jpg" alt="sample59" /></div>
+  <figcaption>
+    <div class="date"><span class="day">NO</span><span class="month">7</span></div>
+    <h3>算的又快又队</h3>
+    <p>
+      <b>单   位：</b>湖南大学，湖南大学信息科学与工程学院  <br />
+      <b>指导老师：</b>阳王东<br />
+      <b>参赛学生：</b>林圣乐,蔡沁耘,董凤坤<br />
+      <b>总分：</b>0.315
+    </p>
+  </figcaption>
+
+</figure>
+
+
+<figure class="snip1253">
+  <div class="image"><img src="assets/img/算得快还算得队（二等奖）.jpg" alt="sample59" /></div>
+  <figcaption>
+    <div class="date"><span class="day">NO</span><span class="month">8</span></div>
+    <h3>算得快还算得队</h3>
+    <p>
+      <b>单   位：</b>北京航空航天大学  <br />
+      <b>指导老师：</b>栾钟治<br />
+      <b>参赛学生：</b>⽯乐同,李明亮,王御⾂<br />
+      <b>总分：</b>0.133
+    </p>
+  </figcaption>
+
+</figure>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <div class="map-clean"></div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright © 线性解法器算法与性能优化竞赛</p><a href="https://beian.miit.gov.cn/" target="blank">京ICP备2021019551号-2</a>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="assets/js/grayscale.js"></script>
+    <script src="assets/js/HTML-Table-to-Excel-V2.js"></script>
+</body>
+
+</html>

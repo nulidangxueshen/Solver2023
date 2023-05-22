@@ -1,0 +1,18 @@
+a:focus, a:hover {
+  text-decoration: none;
+  /*text-transform: none;*/
+  color: #ffffff;
+}
+
+#style_td {
+  word-wrap: break-word;
+  word-break: break-all;
+  width: 30%;
+}
+
+#style_td_7 {
+  word-wrap: break-word;
+  word-break: break-all;
+  width: 70%;
+}
+
