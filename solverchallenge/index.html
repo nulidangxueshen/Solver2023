@@ -90,7 +90,7 @@
                         <br>
                         <br>&nbsp; &nbsp; &nbsp; &nbsp; 1. 商用CPU（Intel Xeon Platinum 9242, 2路共96核，频率2.3 GHz, 内存384 GB DDR4）;
                         <br>&nbsp; &nbsp; &nbsp; &nbsp; 2. 商用GPU（NVIDIA V100，5120 CUDA核，频率1.2 GHz，显存32 GB HBM2）;
-                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 3. 国产CPU（Huawei Kunpeng 920-6426，2路共128核，频率2.6 GHz，内存512GB DDR4;
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 3. 国产CPU（Huawei Kunpeng 920-6426，2路共128核，频率2.6 GHz，内存512GB DDR4）;
                         <br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>软件环境：</strong>准许使用任何软件包参与竞赛，但是在评分时会考虑所使用软件包的自主性和创新性。
                         <br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>参赛队伍：</strong>竞赛面向本科生与研究生开放，学生采用自愿组合方式组成参赛队伍。每支队伍人数不超过3人，且应指定1-2名指导教师。
                         <br><br>
@@ -135,24 +135,28 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td style="color: var(--bs-white);">开启报名通道</td>
-                                <td style="color: var(--bs-white);">5月10日<br></td>
+                                <td style="color: var(--bs-white);">开启报名</td>
+                                <td style="color: var(--bs-white);">5月29日<br></td>
                             </tr>
                             <tr>
-                                <td style="color: var(--bs-white);">公布赛题和开放测试平台<br></td>
-                                <td style="color: var(--bs-white);">5月25日<br></td>
+                                <td style="color: var(--bs-white);">公布赛题<br></td>
+                                <td style="color: var(--bs-white);">5月29日<br></td>
                             </tr>
                             <tr>
-                                <td style="color: var(--bs-white);">开通参赛选手提交程序通道<br></td>
-                                <td style="color: var(--bs-white);">6月10日<br></td>
+                                <td style="color: var(--bs-white);">报名截止<br></td>
+                                <td style="color: var(--bs-white);">6月23日<br></td>
                             </tr>
                             <tr>
-                                <td style="color: var(--bs-white);">关闭程序提交通道<br></td>
-                                <td style="color: var(--bs-white);">7月15日<br></td>
+                                <td style="color: var(--bs-white);">提交程序<br></td>
+                                <td style="color: var(--bs-white);">7月3日<br></td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--bs-white);">关闭提交程序<br></td>
+                                <td style="color: var(--bs-white);">7月21日<br></td>
                             </tr>
                             <tr>
                                 <td style="color: var(--bs-white);">初评、公布入围名单<br></td>
-                                <td style="color: var(--bs-white);">7月25日<br></td>
+                                <td style="color: var(--bs-white);">7月28日<br></td>
                             </tr>
                             <tr>
                                 <td style="color: var(--bs-white);">在SOLVER23会议上进行答辩、颁奖<br></td>
@@ -168,7 +172,7 @@
                 <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
                     <p></p>
                     <h2 style="margin-bottom: 15px;color: var(--bs-white);">竞赛截止报名时间</h2>
-                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; 2021 年 6 月 30 日<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; 2023 年 6 月 23 日<br><br></p>
                     <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
                 </div>
             </div>
@@ -195,7 +199,41 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
                     <h2 style="margin-bottom: 15px;color: var(--bs-dark);"><strong>第三届解法器算法及优化竞赛（SolverChallenge23）赛题</strong></h2>
-                    <p>百度网盘<a href="https://pan.baidu.com/s/1DfuIhlEBODF4PkAug3SQ-Q" target="_blank">下载链接</a>&nbsp;提取码：bhrm</p><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_01_A_plot.png">
+                    <!-- <p>百度网盘
+                        <a href="https://pan.baidu.com/s/1DfuIhlEBODF4PkAug3SQ-Q" target="_blank">下载链接</a>&nbsp;提取码：bhrm
+                    </p> -->
+
+                    <p style="max-width: 95%;text-align: left;">
+                        端到端时间可分为如下3部分。
+                        <br>1. 分析
+                        <br>2. 准备
+                        <br>3. 求解
+                        <br>矩阵和向量的读入、格式转换、分发至多进程、矩阵坐标排序不列入统计时间
+                        <br>
+                        <br>直接法和迭代法对于上述3步的定义略有不同。
+                        <br>
+                        <br>直接法：
+                        <br>1. 分析：利用矩阵结构信息（即不依赖矩阵数值），做解法器预处理，包括图分析、图优化、预开辟空间、节点优化编号等操作，参考intel pardiso的phase=11（注意，pardiso phase=11可以传入矩阵的值做一定的处理，本次比赛不允许）
+                        <br>2. 准备：利用矩阵数值信息做数值分解，参考intel pardiso phase=22
+                        <br>3. 求解：输入右端向量b，得到解向量x，参考intel pardiso phase=33
+                        <br>
+                        <br>迭代法：
+                        <br>1. 分析：利用矩阵结构信息（即不依赖矩阵数值），做解法器预处理，包括预条件子构建、多重网格构建等。
+                        <br>2. 准备：利用矩阵数值信息做数值准备，包括预条件子数值准备，多重网格数值准备等
+                        <br>3. 求解：输入右端向量b，得到解向量x
+                        <br>
+                        <br>注：若将直接法作为预条件子用在迭代法中，则直接法部分参考“直接法”的说明计入迭代法三项相应时间中。
+                        <br>
+                    </p>
+
+                    <img style="max-width: 90%;" src="assets/img/g3.png">
+                    
+                    <p style="max-width: 95%;text-align: left;margin-top: 5%;">
+                        <strong>不同题目对于时间的要求不同，请选手注意。</strong>
+                    </p>
+
+                    <img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_01_A_plot.png">
+                    
                     <div class="table-responsive" style="margin-bottom: 50px;">
                         <table class="table">
                             <thead>
@@ -219,23 +257,30 @@
                                 </tr>
                                 <tr>
                                     <td id="style_td">来源与背景描述&nbsp;&nbsp;</td>
-                                    <td id="style_td_7">PDE：辐射流体力学三维光子方程；<br>网格类型：结构网格；<br>网格规模： 128×128×128；<br>离散格式：有限体积7点格式。</td>
+                                    <td id="style_td_7">PDE：辐射流体力学三维单温方程；<br>网格类型：结构网格；<br>网格规模： 128×128×128；<br>离散格式：有限体积7点格式。</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td">MD5</td>
-                                    <td id="style_td_7">267e523efb310c31<br>b6fa23a3804c4da6</td>
+                                    <td id="style_td_7"></td>
                                 </tr>
                                 <tr>
                                     <td class="float-none" id="style_td">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
                                     <td id="style_td_7">&lt; 1e-10</td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
-                                    <td id="style_td_7" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">&lt; 1GB<br></td>
+                                    <td id="style_td">求解过程最大内存要求<br></td>
+                                    <td id="style_td_7">&lt; 1.5GB<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">关注时间<br></td>
+                                    <td id="style_td_7" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">端到端时间<br></td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_02_A_plot.png">
+                    </div>
+                    
+                    <!-- <img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_02_A_plot.png"> -->
+                    
                     <div class="table-responsive" style="margin-bottom: 50px;">
                         <table class="table">
                             <thead>
@@ -259,23 +304,30 @@
                                 </tr>
                                 <tr>
                                     <td id="style_td-7">来源与背景描述&nbsp;&nbsp;</td>
-                                    <td id="style_td_-3">PDE：辐射流体力学三维三温方程；<br>网格类型：结构网格；<br>网格规模： 128×128×128；<br>离散格式：有限体积7点格式</td>
+                                    <td id="style_td_-3">PDE：辐射流体力学三维三温方程；<br>网格类型：结构网格；<br>网格规模： 128×128×128；每个网格3个自由度。<br>离散格式：有限体积7点格式</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-8">MD5</td>
-                                    <td id="style_td_-4">de21e4d00623cd41<br>a95182fd447867f0</td>
+                                    <td id="style_td_-4"></td>
                                 </tr>
                                 <tr>
                                     <td class="float-none" id="style_td-9">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
                                     <td id="style_td_-5">&lt; 1e-10</td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td-10" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
-                                    <td id="style_td_-6" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">&lt; 3GB<br></td>
+                                    <td id="style_td">求解过程最大内存要求<br></td>
+                                    <td id="style_td_7">&lt; 4.5GB<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">关注时间<br></td>
+                                    <td id="style_td_7" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">端到端时间<br></td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_03_A_plot.png">
+                    </div>
+                    
+                    <!-- <img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_03_A_plot.png"> -->
+                    
                     <div class="table-responsive" style="margin-bottom: 50px;">
                         <table class="table">
                             <thead>
@@ -287,35 +339,46 @@
                             <tbody>
                                 <tr>
                                     <td id="style_td-83">阶数非零元数</td>
-                                    <td id="style_td_-49">83,073</td>
+                                    <td id="style_td_-49">12,582,822</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-84">非零元数</td>
-                                    <td id="style_td-85">2,826,927</td>
+                                    <td id="style_td-85">678,943,908</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-86">应用领域</td>
-                                    <td id="style_td_-50">工程力学</td>
+                                    <td id="style_td_-50">结构力学</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-87">来源与背景描述&nbsp;&nbsp;</td>
-                                    <td id="style_td_-51">PDE：离心机装置接触力学问题线弹性方程；<br>离散格式：一阶节点有限元，每个节点定义三个自由（位移三个分量）；<br>特点：带有复杂约束条件。&nbsp;&nbsp;</td>
+                                    <td id="style_td_-51">PDE：三维线弹性方程；<br>网格类型：非结构网格；<br>网格规模：非结构网格; <br>离散格式：有限元。 &nbsp;&nbsp;</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-88">MD5</td>
-                                    <td id="style_td_-52">bb24e4bd83ae1def<br>230b3c47e5c36a71</td>
+                                    <td id="style_td_-52"></td>
                                 </tr>
                                 <tr>
                                     <td class="float-none" id="style_td-89">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
                                     <td id="style_td_-53">&lt; 1e-8</td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td-90" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
-                                    <td id="style_td_-54" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无</td>
+                                    <td id="style_td">求解过程最大内存要求<br></td>
+                                    <td id="style_td_7">无<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">其它条件<br></td>
+                                    <td id="style_td_7">初始x0为零向量<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">关注时间<br></td>
+                                    <td id="style_td_7" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">端到端时间<br></td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_04_A_plot.png">
+                    </div>
+                    
+                    <!-- <img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_04_A_plot.png"> -->
+                    
                     <div class="table-responsive" style="margin-bottom: 50px;">
                         <table class="table">
                             <thead>
@@ -327,23 +390,30 @@
                             <tbody>
                                 <tr>
                                     <td id="style_td-73">阶数非零元数</td>
-                                    <td id="style_td_-43">2,081,541</td>
+                                    <td id="style_td_-43">4,951,702</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-74">非零元数</td>
-                                    <td id="style_td-75">71,033,481</td>
+                                    <td id="style_td-75">612,096,612</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-76">应用领域</td>
-                                    <td id="style_td_-44">工程力学</td>
+                                    <td id="style_td_-44">生物医疗</td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td-77">来源与背景描述&nbsp;&nbsp;</td>
-                                    <td id="style_td_-45">PDE：航空发动机整机静力学模拟接触力学线弹性方程；<br>离散格式：一阶节点有限元，每个节点定义三个自由（位移三个分量）；<br>特点：带有复杂约束条件。</td>
+                                    <td id="style_td-77">
+                                        来源与背景描述&nbsp;&nbsp;
+                                    </td>
+                                    <td id="style_td_-45">
+                                        PDE：三维流体-相场-刚体耦合方程；
+                                        <br>网格类型：非结构四面体网格；
+                                        <br>网格规模：618,962网格点； 
+                                        <br>离散格式：P1-P1压力稳定化，带刚体约束条件。
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-78">MD5</td>
-                                    <td id="style_td_-46">468ed4124ffa647d<br>2681132456fa0eb0</td>
+                                    <td id="style_td_-46"></td>
                                 </tr>
                                 <tr>
                                     <td class="float-none" id="style_td-79">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
@@ -355,7 +425,10 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_05_A_plot.png">
+                    </div>
+                    
+                    <!-- <img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_05_A_plot.png"> -->
+                    
                     <div class="table-responsive" style="margin-bottom: 50px;">
                         <table class="table">
                             <thead>
@@ -367,35 +440,51 @@
                             <tbody>
                                 <tr>
                                     <td id="style_td-63">阶数非零元数</td>
-                                    <td id="style_td_-37">225,800</td>
+                                    <td id="style_td_-37">3,514,495</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-64">非零元数</td>
-                                    <td id="style_td-65">3,591,872</td>
+                                    <td id="style_td-65">634,840,119</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-66">应用领域</td>
-                                    <td id="style_td_-38">电子学系统</td>
+                                    <td id="style_td_-38">生物医疗</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-67">来源与背景描述&nbsp;&nbsp;</td>
-                                    <td id="style_td_-39">PDE：滤波器电磁场仿真时谐麦克斯韦方程；<br>离散格式：一阶Nedelec有限元，每条边一个自由度；<br>特点：离散矩阵为复型系统。</td>
+                                    <td id="style_td_-39">
+                                        PDE：三维流体-刚体耦合方程；
+                                        <br>网格类型：非结构四面体网格；
+                                        <br>网格规模：82,615网格点；
+                                        <br>离散格式：Taylor-Hood有限元，带刚体约束条件。
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-68">MD5</td>
-                                    <td id="style_td_-40">07821cd81df9a41c<br>581db1c15a0b8b6d</td>
+                                    <td id="style_td_-40"></td>
                                 </tr>
                                 <tr>
                                     <td class="float-none" id="style_td-69">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
-                                    <td id="style_td_-41">&lt; 1e-8</td>
+                                    <td id="style_td_-41">&lt; 1e-10</td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td-70" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
-                                    <td id="style_td_-42" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无</td>
+                                    <td id="style_td">求解过程最大内存要求<br></td>
+                                    <td id="style_td_7">无<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">其它条件<br></td>
+                                    <td id="style_td_7">1-base 列主序稀疏矩阵<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">关注时间<br></td>
+                                    <td id="style_td_7" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">端到端时间<br></td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_06_A_plot.png">
+                    </div>
+                    
+                    <!-- <img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_06_A_plot.png"> -->
+                    
                     <div class="table-responsive" style="margin-bottom: 50px;">
                         <table class="table">
                             <thead>
@@ -407,35 +496,53 @@
                             <tbody>
                                 <tr>
                                     <td id="style_td-53">阶数非零元数</td>
-                                    <td id="style_td_-31">2,188,844</td>
+                                    <td id="style_td_-31">92,275,200</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-54">非零元数</td>
-                                    <td id="style_td-55">23,524,309</td>
+                                    <td id="style_td-55">1,742,860,800</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-56">应用领域</td>
-                                    <td id="style_td_-32">油藏模拟</td>
+                                    <td id="style_td_-32">天气预报</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-57">来源与背景描述&nbsp;&nbsp;</td>
-                                    <td id="style_td_-33">模型：油水两相黑油模型；<br>PDE：非线性耦合渗流方程；<br>离散格式：块中心有限差分，每个网格定义两个自由度（一个压力和一个饱和度变量）；<br>特点：矩阵为块稀疏结构。</td>
+                                    <td id="style_td_-33">
+                                        PDE：全球天气预报Helmholtz方程;
+                                        <br>网格类型：拟结构网格（东西周期边界，南北极网格跨极点中心对称）;
+                                        <br>网格规模：1440×720×89；（同时提供相同问题的两个不同分辨率矩阵供参考： <br>1.网格规模：360x180x89；行数：5767200；非零元素个数：108928800。
+                                        <br>2. 网格规模：720x360x89；行数：23068800；非零元素个数：435715200）
+                                        <br>离散格式：有限差分19点格式。    
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-58">MD5</td>
-                                    <td id="style_td_-34">ac1718745d68660b<br>7bb7823d8aa8d748</td>
+                                    <td id="style_td_-34"></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="float-none" id="style_td-59">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub></td>
+                                    <td id="style_td_-35">&lt; 1e-6</td>
                                 </tr>
                                 <tr>
-                                    <td class="float-none" id="style_td-59">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
-                                    <td id="style_td_-35">&lt; 1e-4</td>
+                                    <td id="style_td">求解过程最大内存要求<br></td>
+                                    <td id="style_td_7">无<br></td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td-60" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
-                                    <td id="style_td_-36" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无<br></td>
+                                    <td id="style_td">其它条件<br></td>
+                                    <td id="style_td_7">初始x0为零向量<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">关注时间<br></td>
+                                    <td id="style_td_7" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解<br></td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_07_A_plot.png">
+                    </div>
+                    
+                    <!-- <img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_07_A_plot.png"> -->
+                    
                     <div class="table-responsive" style="margin-bottom: 50px;">
                         <table class="table">
                             <thead>
@@ -447,35 +554,50 @@
                             <tbody>
                                 <tr>
                                     <td id="style_td-43">阶数非零元数</td>
-                                    <td id="style_td_-25">431,358</td>
+                                    <td id="style_td_-25">1,765,074</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-44">非零元数</td>
-                                    <td id="style_td-45">2,586,755</td>
+                                    <td id="style_td-45">28,533,594</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-46">应用领域</td>
-                                    <td id="style_td_-26">油藏模拟</td>
+                                    <td id="style_td_-26">电子学系统</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-47">来源与背景描述&nbsp;&nbsp;</td>
-                                    <td id="style_td_-27">模型：三相黑油模型；<br>PDE：非线性耦合渗流方程；<br>离散格式：块中心有限差分，每个网格定义三个自由度（一个压力和两个饱和度变量）；<br>特点：矩阵为块稀疏结构。</td>
+                                    <td id="style_td_-27">
+                                        PDE：滤波器电磁场仿真时谐麦克斯韦方程；
+                                        <br>离散格式：一阶Nedelec有限元，每条边一个自由度；
+                                        <br>特点：离散矩阵为复型系统。
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-48">MD5</td>
-                                    <td id="style_td_-28">b0ab398f7e11c670<br>834cbf0d52573491</td>
+                                    <td id="style_td_-28"></td>
                                 </tr>
                                 <tr>
                                     <td class="float-none" id="style_td-49">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
-                                    <td id="style_td_-29">&lt; 1e-5</td>
+                                    <td id="style_td_-29">&lt; 1e-8</td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td-50" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
-                                    <td id="style_td_-30" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,1);">无<br></td>
+                                    <td id="style_td">求解过程最大内存要求<br></td>
+                                    <td id="style_td_7">无<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">其它条件<br></td>
+                                    <td id="style_td_7">初始x0为零向量<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">关注时间<br></td>
+                                    <td id="style_td_7" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">端到端时间<br></td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_08_A_plot.png">
+                    </div>
+                    
+                    <!-- <img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_08_A_plot.png"> -->
+                    
                     <div class="table-responsive" style="margin-bottom: 50px;">
                         <table class="table">
                             <thead>
@@ -487,11 +609,11 @@
                             <tbody>
                                 <tr>
                                     <td id="style_td-33">阶数非零元数</td>
-                                    <td id="style_td_-19">4,504,770</td>
+                                    <td id="style_td_-19">5,809,680</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-34">非零元数</td>
-                                    <td id="style_td-35">60,769,595</td>
+                                    <td id="style_td-35">194,348,610</td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-36">应用领域</td>
@@ -499,23 +621,34 @@
                                 </tr>
                                 <tr>
                                     <td id="style_td-37">来源与背景描述&nbsp;&nbsp;</td>
-                                    <td id="style_td_-21">集成电路瞬态仿真方程；<br>电路类型：PHY接口；<br>电路工艺：16nm。</td>
+                                    <td id="style_td_-21">
+                                        电路谐波平衡分析;
+                                        <br>电路工艺：T65；
+                                        <br>特点：离散矩阵为复型系统。
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-38">MD5</td>
-                                    <td id="style_td_-22">658ac6cde06ee754<br>3485bbf36a1c0230</td>
+                                    <td id="style_td_-22"></td>
                                 </tr>
                                 <tr>
-                                    <td class="float-none" id="style_td-39">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
+                                    <td class="float-none" id="style_td-39">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>max</sub></td>
                                     <td id="style_td_-23">&lt; 1e-8</td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td-40" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,1);">求解过程最大内存要求<br></td>
-                                    <td id="style_td_-24" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,1);">无<br></td>
+                                    <td id="style_td">求解过程最大内存要求<br></td>
+                                    <td id="style_td_7">无<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">关注时间<br></td>
+                                    <td id="style_td_7" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">准备+求解<br></td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_09_A_plot.png">
+                    </div>
+                    
+                    <!-- <img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_09_A_plot.png"> -->
+                    
                     <div class="table-responsive" style="margin-bottom: 50px;">
                         <table class="table">
                             <thead>
@@ -543,19 +676,26 @@
                                 </tr>
                                 <tr>
                                     <td id="style_td-28">MD5</td>
-                                    <td id="style_td_-16">24fb791736e97795<br>24479f62ff9e8baf</td>
+                                    <td id="style_td_-16"></td>
                                 </tr>
                                 <tr>
                                     <td class="float-none" id="style_td-29">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
                                     <td id="style_td_-17">&lt; 1e-8</td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td-30" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,1);">求解过程最大内存要求<br></td>
-                                    <td id="style_td_-18" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无<br></td>
+                                    <td id="style_td">求解过程最大内存要求<br></td>
+                                    <td id="style_td_7">无<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">关注时间<br></td>
+                                    <td id="style_td_7" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">准备+求解<br></td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_10_A_plot.png">
+                    </div>
+                    
+                    <!-- <img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_10_A_plot.png"> -->
+                    
                     <div class="table-responsive" style="margin-bottom: 50px;">
                         <table class="table">
                             <thead>
@@ -579,19 +719,28 @@
                                 </tr>
                                 <tr>
                                     <td id="style_td-17">来源与背景描述&nbsp;&nbsp;</td>
-                                    <td id="style_td_-9">射频电路谐波平衡仿真方程；<br>电路类型：VCO；<br>电路工艺：28nm；<br>特点：离散矩阵为复型系统。</td>
+                                    <td id="style_td_-9">
+                                        射频电路谐波平衡仿真方程；
+                                        <br>电路类型：VCO；
+                                        <br>电路工艺：28nm；
+                                        <br>特点：离散矩阵为复型系统。
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td id="style_td-18">MD5</td>
-                                    <td id="style_td_-10">8610e400c7b86d6c<br>75482c1c48b7dec9</td>
+                                    <td id="style_td_-10"></td>
                                 </tr>
                                 <tr>
                                     <td class="float-none" id="style_td-19">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
                                     <td id="style_td_-11">&lt; 1e-8</td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td-20" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
-                                    <td id="style_td_-12" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无</td>
+                                    <td id="style_td">求解过程最大内存要求<br></td>
+                                    <td id="style_td_7">无<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">关注时间<br></td>
+                                    <td id="style_td_7" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">准备+求解<br></td>
                                 </tr>
                             </tbody>
                         </table>
