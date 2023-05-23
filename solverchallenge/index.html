@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>第三届线性解法器算法与性能优化竞赛</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap">
@@ -32,7 +32,6 @@
                     <li class="nav-item nav-link"><a class="nav-link" href="#organization">竞赛组织</a></li>
                     <li class="nav-item nav-link"><a class="nav-link" href="#contact">联系方式</a></li>
                     <li class="nav-item nav-link"><a class="nav-link" href="../index.html">Solver23</a></li>
-                    <!-- <li class="nav-item nav-link"><a class="nav-link" href="#contact">竞赛结果</a></li> -->
                 </ul>
             </div>
         </div>
@@ -82,9 +81,20 @@
                 <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;color: var(--bs-white);">
                     <h2 style="margin-bottom: 15px;color: var(--bs-light);">竞赛方案与规则</h2>
                     <h2 style="margin-bottom: 15px;color: var(--bs-white);text-align: left;font-size: 20.128px;">竞赛方案</h2>
-                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; 竞赛组委会提供10套来源于不同应用领域的线性系统（每套线性系统包括矩阵A和右端向量b、存储格式的描述、求解约束条件等），参赛选手针对这10套系统进行求解，不限制求解方法（即迭代法、直接法或混合方法均可），也不限制解法器软件包的来源。竞赛网站将提供程序中输入、输出与计时部分，并开放接口供参赛选手提交自己的执行代码（若是闭源的，则提交链接文件）。最终将使用不同的右端向量b测试，其求解效果（速度、精度、浮点运算次数等）将作为本竞赛奖项评判标准。<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">
+                        &nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; 竞赛组委会提供10套来源于不同应用领域的线性系统（每套线性系统包括矩阵A和右端向量b、存储格式的描述、求解约束条件等），参赛选手针对这10套系统进行求解，不限制求解方法（即迭代法、直接法或混合方法均可），也不限制解法器软件包的来源。竞赛网站将提供程序中输入、输出与计时部分，并开放接口供参赛选手提交自己的执行代码（若是闭源的，则提交链接文件）。最终将使用不同的右端向量b测试，其求解效果（速度、精度、浮点运算次数等）将作为本竞赛奖项评判标准。<br><br></p>
                     <h2 style="margin-bottom: 15px;color: var(--bs-white);text-align: left;font-size: 20.128px;">竞赛规则</h2>
-                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; <br><strong>&nbsp; &nbsp; &nbsp; &nbsp; 硬件环境：</strong>竞赛指定硬件作为程序性能的测试平台，参赛选手有权使用竞赛测试平台，但使用时间将被限制，在使用时间内参赛选手可以配置环境与测试程序。在竞赛提供的平台测出的成绩会作为参赛选手的最终成绩。<br><br>&nbsp; &nbsp; &nbsp; &nbsp; 指定硬件包括：<br><br>&nbsp; &nbsp; &nbsp; &nbsp; 商用CPU（Intel Xeon Gold 6230, 4路共80核，频率2.1 GHz, 内存384 GB DDR4，带宽511 GB/s）；<br>&nbsp; &nbsp; &nbsp; &nbsp; 商用GPU（NVIDIA A100，6912 CUDA核，频率1.4 GHz，显存40 GB HBM2，带宽1555 GB/s）。<br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>软件环境：</strong>准许使用任何软件包参与竞赛，但是在评分时会考虑所使用软件包的自主性和创新性。<br><br>&nbsp; &nbsp; &nbsp; &nbsp;<strong> 参赛队伍：</strong>竞赛面向本科生与研究生开放，学生采用自愿组合方式组成参赛队伍。每支队伍人数不超过3人，且应指定1-2名指导教师。<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; 
+                        <br><strong>&nbsp; &nbsp; &nbsp; &nbsp; 硬件环境：</strong>竞赛指定硬件作为程序性能的测试平台，参赛选手有权使用竞赛测试平台，但使用时间将被限制，在使用时间内参赛选手可以配置环境与测试程序。在竞赛提供的平台测出的成绩会作为参赛选手的最终成绩。
+                        <br><br>&nbsp; &nbsp; &nbsp; &nbsp; 指定硬件包括：
+                        <br>
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 1. 商用CPU（Intel Xeon Platinum 9242, 2路共96核，频率2.3 GHz, 内存384 GB DDR4）;
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 2. 商用GPU（NVIDIA V100，5120 CUDA核，频率1.2 GHz，显存32 GB HBM2）;
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; 3. 国产CPU（Huawei Kunpeng 920-6426，2路共128核，频率2.6 GHz，内存512GB DDR4;
+                        <br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>软件环境：</strong>准许使用任何软件包参与竞赛，但是在评分时会考虑所使用软件包的自主性和创新性。
+                        <br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>参赛队伍：</strong>竞赛面向本科生与研究生开放，学生采用自愿组合方式组成参赛队伍。每支队伍人数不超过3人，且应指定1-2名指导教师。
+                        <br><br>
+                    </p>
                     <h2 style="margin-bottom: 15px;color: var(--bs-white);text-align: left;font-size: 20.128px;">文档内容规范</h2>
                     <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; 算法设计实现涉及到的技术栈：包含采用的硬件、系统环境、软件；<br>&nbsp; &nbsp; &nbsp; &nbsp; 算法详细内容：包含采用的算法、参数；<br>&nbsp; &nbsp; &nbsp; &nbsp; 总体思路：包含问题的简要分析、求解策略；<br>&nbsp; &nbsp; &nbsp; &nbsp; 结果分析；<br>&nbsp; &nbsp; &nbsp; &nbsp; 遇到的问题。<br><br></p>
                 </div>
@@ -94,7 +104,9 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
                     <h2 style="margin-bottom: 15px;color: var(--bs-white);">评分依据</h2>
-                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>求解速度（到解墙上时间）：</strong>评分标准同时考虑求解的线性系统个数与性能。每个系统满分10分，能正确解出且性能最优者得满分，其他选手的成绩依次顺延，未能解出者不得分。例如：求解某一系统时，排名第一的参赛小组用时120ms、排名第二的参赛小组用时240ms、排名第三的参赛小组未解出,则第一参赛小组得10分，第二参赛小组得5分，第三参赛小组得0分。所有10组系统得分累加得到总成绩。<br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>浮点运算次数：</strong>使用性能测试软件记录选手程序的浮点运算次数，目的在于考察选手从数值算法的角度进行算法创新与改进。每组矩阵满分10分，浮点运算次数最优的选手得满分，其他选手按比例顺延，未解出者不得分。所有10组系统得分累加得到总成绩。<br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>精度：</strong>确保求解出的解向量x满足相应的精度要求。<br><br></p>
+                    <p style="text-align: left;margin-bottom: 5px;color: var(--bs-white);">&nbsp; &nbsp; &nbsp; &nbsp; 
+                        <br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>求解速度（到解墙上时间）：</strong>评分标准同时考虑求解的线性系统个数与性能。每个系统满分10分，能正确解出且性能最优者得满分，其他选手的成绩依次顺延，未能解出者不得分。例如：求解某一系统时，排名第一的参赛小组用时120ms、排名第二的参赛小组用时240ms、排名第三的参赛小组未解出,则第一参赛小组得10分，第二参赛小组得5分，第三参赛小组得0分。所有10组系统得分累加得到总成绩。
+                        <br><br>&nbsp; &nbsp; &nbsp; &nbsp; <strong>限制：</strong>确保求解出的解向量x满足相应的精度要求，并且内存使用满足“内存限制”。<br><br></p>
                     <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
                 </div>
             </div>
@@ -143,8 +155,8 @@
                                 <td style="color: var(--bs-white);">7月25日<br></td>
                             </tr>
                             <tr>
-                                <td style="color: var(--bs-white);">在克拉玛依会议上进行答辩、颁奖<br></td>
-                                <td style="color: var(--bs-white);">7月30-8月1日<br></td>
+                                <td style="color: var(--bs-white);">在SOLVER23会议上进行答辩、颁奖<br></td>
+                                <td style="color: var(--bs-white);">8月7日-8月8日<br></td>
                             </tr>
                         </tbody>
                     </table>
@@ -160,20 +172,36 @@
                     <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
                 </div>
             </div>
+            <div class="row" style="margin-top: 30px;text-align: center;margin-right: 15px;margin-left: 15px;">
+                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;margin: 9px;">
+                    <p></p>
+                    <h2 style="margin-bottom: 15px;color: var(--bs-white);">竞赛报名方式</h2>
+                    <p style="text-align: center;margin-bottom: 5px;color: var(--bs-white);">
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <br>竞赛报名请<a href="https://f.kdocs.cn/g/dxlv7XA8/">点击此处</a>填写表格，或扫描下方二维码
+                        <br>
+                        <br>
+                        <img src="assets/img/g2.png" style="width: 256px;">
+                        <br>
+                        <br>
+                    </p>
+                    <p style="text-align: left;margin-bottom: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></p>
+                </div>
+            </div>
         </div>
     </section>
     <section class="text-center content-section" id="competition" style="background: #BE95C4;padding: 100px 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
-                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);"><strong>第一届解法器算法及优化竞赛（SolverChallenge21）赛题</strong></h2>
+                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);"><strong>第三届解法器算法及优化竞赛（SolverChallenge23）赛题</strong></h2>
                     <p>百度网盘<a href="https://pan.baidu.com/s/1DfuIhlEBODF4PkAug3SQ-Q" target="_blank">下载链接</a>&nbsp;提取码：bhrm</p><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_01_A_plot.png">
                     <div class="table-responsive" style="margin-bottom: 50px;">
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th id="style_td">赛题名称</th>
-                                    <th id="style_td"><strong>solverchallenge21_01</strong></th>
+                                    <th id="style_td"><strong>solverchallenge23_01</strong></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -205,10 +233,6 @@
                                     <td id="style_td" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
                                     <td id="style_td_7" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">&lt; 1GB<br></td>
                                 </tr>
-                                <tr>
-                                    <td id="style_td-1" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
-                                    <td id="style_td_-55" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">HiNAS-M队（2021年）<br></td>
-                                </tr>
                             </tbody>
                         </table>
                     </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_02_A_plot.png">
@@ -217,7 +241,7 @@
                             <thead>
                                 <tr>
                                     <th id="style_td">赛题名称</th>
-                                    <th id="style_td_7"><strong>solverchallenge21_02</strong></th>
+                                    <th id="style_td_7"><strong>solverchallenge23_02</strong></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -249,10 +273,6 @@
                                     <td id="style_td-10" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
                                     <td id="style_td_-6" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">&lt; 3GB<br></td>
                                 </tr>
-                                <tr>
-                                    <td id="style_td-2" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
-                                    <td id="style_td_-56" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">GMW队（2021年）<br></td>
-                                </tr>
                             </tbody>
                         </table>
                     </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_03_A_plot.png">
@@ -261,7 +281,7 @@
                             <thead>
                                 <tr>
                                     <th id="style_td-81">赛题名称</th>
-                                    <th id="style_td-82"><strong>solverchallenge21_03</strong></th>
+                                    <th id="style_td-82"><strong>solverchallenge23_03</strong></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -293,10 +313,6 @@
                                     <td id="style_td-90" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
                                     <td id="style_td_-54" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无</td>
                                 </tr>
-                                <tr>
-                                    <td id="style_td-91" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
-                                    <td id="style_td_-57" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">GMW队（2021年）<br></td>
-                                </tr>
                             </tbody>
                         </table>
                     </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_04_A_plot.png">
@@ -305,7 +321,7 @@
                             <thead>
                                 <tr>
                                     <th id="style_td-71">赛题名称</th>
-                                    <th id="style_td-72"><strong>solverchallenge21_04</strong></th>
+                                    <th id="style_td-72"><strong>solverchallenge23_04</strong></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -337,10 +353,6 @@
                                     <td id="style_td-80" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
                                     <td id="style_td_-48" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无</td>
                                 </tr>
-                                <tr>
-                                    <td id="style_td-92" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
-                                    <td id="style_td_-58" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">GMW队（2021年）<br></td>
-                                </tr>
                             </tbody>
                         </table>
                     </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_05_A_plot.png">
@@ -349,7 +361,7 @@
                             <thead>
                                 <tr>
                                     <th id="style_td-61">赛题名称</th>
-                                    <th id="style_td-62"><strong>solverchallenge21_05</strong></th>
+                                    <th id="style_td-62"><strong>solverchallenge23_05</strong></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -381,10 +393,6 @@
                                     <td id="style_td-70" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
                                     <td id="style_td_-42" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无</td>
                                 </tr>
-                                <tr>
-                                    <td id="style_td-93" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
-                                    <td id="style_td_-59" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">SolverChallenge-XTU队（2021年）<br></td>
-                                </tr>
                             </tbody>
                         </table>
                     </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_06_A_plot.png">
@@ -393,7 +401,7 @@
                             <thead>
                                 <tr>
                                     <th id="style_td-51">赛题名称</th>
-                                    <th id="style_td-52"><strong>solverchallenge21_06</strong></th>
+                                    <th id="style_td-52"><strong>solverchallenge23_06</strong></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -425,10 +433,6 @@
                                     <td id="style_td-60" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
                                     <td id="style_td_-36" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无<br></td>
                                 </tr>
-                                <tr>
-                                    <td id="style_td-94" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
-                                    <td id="style_td_-60" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">SolverChallenge-XTU队（2021年）<br></td>
-                                </tr>
                             </tbody>
                         </table>
                     </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_07_A_plot.png">
@@ -437,7 +441,7 @@
                             <thead>
                                 <tr>
                                     <th id="style_td-41">赛题名称</th>
-                                    <th id="style_td-42"><strong>solverchallenge21_07</strong></th>
+                                    <th id="style_td-42"><strong>solverchallenge23_07</strong></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -469,10 +473,6 @@
                                     <td id="style_td-50" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
                                     <td id="style_td_-30" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,1);">无<br></td>
                                 </tr>
-                                <tr>
-                                    <td id="style_td-95" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
-                                    <td id="style_td_-61" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">SolverChallenge-XTU队（2021年）<br></td>
-                                </tr>
                             </tbody>
                         </table>
                     </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_08_A_plot.png">
@@ -481,7 +481,7 @@
                             <thead>
                                 <tr>
                                     <th id="style_td-31">赛题名称</th>
-                                    <th id="style_td-32"><strong>solverchallenge21_08</strong></th>
+                                    <th id="style_td-32"><strong>solverchallenge23_08</strong></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -513,10 +513,6 @@
                                     <td id="style_td-40" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,1);">求解过程最大内存要求<br></td>
                                     <td id="style_td_-24" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,1);">无<br></td>
                                 </tr>
-                                <tr>
-                                    <td id="style_td-96" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
-                                    <td id="style_td_-62" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">SolverChallenge-XTU队（2021年）<br></td>
-                                </tr>
                             </tbody>
                         </table>
                     </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_09_A_plot.png">
@@ -525,7 +521,7 @@
                             <thead>
                                 <tr>
                                     <th id="style_td-21">赛题名称</th>
-                                    <th id="style_td-22"><strong>solverchallenge21_09</strong></th>
+                                    <th id="style_td-22"><strong>solverchallenge23_09</strong></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -557,10 +553,6 @@
                                     <td id="style_td-30" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,1);">求解过程最大内存要求<br></td>
                                     <td id="style_td_-18" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无<br></td>
                                 </tr>
-                                <tr>
-                                    <td id="style_td-97" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
-                                    <td id="style_td_-63" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">SolverChallenge-XTU队（2021年）<br></td>
-                                </tr>
                             </tbody>
                         </table>
                     </div><img style="max-width: 90%;width: 400px;min-width: 150px;" src="assets/img/solverchallenge21_10_A_plot.png">
@@ -569,7 +561,7 @@
                             <thead>
                                 <tr>
                                     <th id="style_td-11">赛题名称</th>
-                                    <th id="style_td-12"><strong>solverchallenge21_10</strong></th>
+                                    <th id="style_td-12"><strong>solverchallenge23_10</strong></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -600,10 +592,6 @@
                                 <tr>
                                     <td id="style_td-20" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">求解过程最大内存要求<br></td>
                                     <td id="style_td_-12" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);">无</td>
-                                </tr>
-                                <tr>
-                                    <td id="style_td-98" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">最快成绩<br></td>
-                                    <td id="style_td_-64" style="border-bottom-width: 2px;border-bottom-color: rgb(255,15,0);font-weight: bold;">HiNAS-M队（2021年）<br></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -644,135 +632,6 @@
             </div>
         </div>
     </section>
-    <!-- <section id="contact-1" class="content-section" style="background: #c3bcbd;padding: 100px 0px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
-                    <h2 style="margin-bottom: 15px;color: var(--bs-dark);"><strong>竞赛结果公布</strong><br></h2><figure class="snip1253">
-  <div class="image"><img src="assets/img/SolverChallenge-XTU%20Team（特等奖）.jpg" alt="sample52" /></div>
-  <figcaption>
-    <div class="date"><span class="day">NO</span><span class="month">1</span></div>
-    <h3 style="word-wrap:break-word;word-break:break-all;">SolverChallenge-XTU队</h3>
-    <p>
-      <b>单   位：</b>湘潭大学<br />
-      <b>指导老师：</b>冯春⽣, 岳孝强<br />
-      <b>参赛学生：</b>赵梨，王慧，赵英蒸<br />
-      <b>总分：</b>58.819
-    </p>
-  </figcaption>
-</figure>
-
-
-<figure class="snip1253">
-  <div class="image"><img src="assets/img/GMW队（一等奖）.jpg" alt="sample52" /></div>
-  <figcaption>
-    <div class="date"><span class="day">NO</span><span class="month">2</span></div>
-    <h3>GMW队</h3>
-    <p>
-      <b>单   位：</b>中国科学院数学与系统科学研究院<br />
-      <b>指导老师：</b>郑伟英, 崔涛<br />
-      <b>参赛学生：</b>王⼀甲，穆朋聪，郭仲琨<br />
-      <b>总分：</b>53.484
-    </p>
-  </figcaption>
-
-
-</figure>
-<figure class="snip1253">
-  <div class="image"><img src="assets/img/HiNAS-M队（一等奖）.jpg" alt="sample52" /></div>
-  <figcaption>
-    <div class="date"><span class="day">NO</span><span class="month">3</span></div>
-    <h3>HiNAS-M队</h3>
-    <p>
-      <b>单   位：</b>中国⼯程物理研究院研究⽣院, 南京⼤学, 中物院⾼性能数值模拟中⼼<br />
-      <b>指导老师：</b>胡少亮<br />
-      <b>参赛学生：</b>毛润彰，邓蕴桐，包怡坤<br />
-      <b>总分：</b>26.79
-    </p>
-  </figcaption>
-
-</figure>
-
-<figure class="snip1253">
-  <div class="image"><img src="assets/img/一笑而过队（一等奖）.jpg" alt="sample59" /></div>
-  <figcaption>
-    <div class="date"><span class="day">NO</span><span class="month">4</span></div>
-    <h3>一笑而过队</h3>
-    <p>
-      <b>单   位：</b>中国⼯程物理研究院, 中国科学院数学与系统科学研究院, 中物院⾼性能数值模拟中⼼<br />
-      <b>指导老师：</b>胡少亮<br />
-      <b>参赛学生：</b>邹海峰，李仕哲，刘笑<br />
-      <b>总分：</b>20.76
-    </p>
-  </figcaption>
-
-</figure>
-
-<figure class="snip1253">
-  <div class="image"><img src="assets/img/克拉玛依美食队（一等奖）.jpg" alt="sample59" /></div>
-  <figcaption>
-    <div class="date"><span class="day">NO</span><span class="month">5</span></div>
-    <h3>克拉玛依美食队</h3>
-    <p>
-      <b>单   位：</b>中国⼯程物理研究院研究⽣院, 中物院软件中⼼<br />
-      <b>指导老师：</b>范荣红<br />
-      <b>参赛学生：</b>段晓宇, 胡毅, 王碧翊<br />
-      <b>总分：</b>19.407
-    </p>
-  </figcaption>
-
-</figure>
-
-
-<figure class="snip1253">
-  <div class="image"><img src="assets/img/Communication-avoiding队（一等奖）.jpg" alt="sample59" /></div>
-  <figcaption>
-    <div class="date"><span class="day">NO</span><span class="month">6</span></div>
-    <h3 style="word-wrap:break-word;word-break:break-all;">Communication-avoiding队</h3>
-    <p>
-      <b>单   位：</b>国防科技大学, 北京应用物理与计算数学研究所 <br />
-      <b>指导老师：</b>谷同祥, 姜浩<br />
-      <b>参赛学生：</b>陈琳,何康,雷晓军<br />
-      <b>总分：</b>6.258
-    </p>
-  </figcaption>
-
-</figure>
-
-<figure class="snip1253">
-  <div class="image"><img src="assets/img/算的又快又队（二等奖）%20.jpg" alt="sample59" /></div>
-  <figcaption>
-    <div class="date"><span class="day">NO</span><span class="month">7</span></div>
-    <h3>算的又快又队</h3>
-    <p>
-      <b>单   位：</b>湖南大学，湖南大学信息科学与工程学院  <br />
-      <b>指导老师：</b>阳王东<br />
-      <b>参赛学生：</b>林圣乐,蔡沁耘,董凤坤<br />
-      <b>总分：</b>0.315
-    </p>
-  </figcaption>
-
-</figure>
-
-
-<figure class="snip1253">
-  <div class="image"><img src="assets/img/算得快还算得队（二等奖）.jpg" alt="sample59" /></div>
-  <figcaption>
-    <div class="date"><span class="day">NO</span><span class="month">8</span></div>
-    <h3>算得快还算得队</h3>
-    <p>
-      <b>单   位：</b>北京航空航天大学  <br />
-      <b>指导老师：</b>栾钟治<br />
-      <b>参赛学生：</b>⽯乐同,李明亮,王御⾂<br />
-      <b>总分：</b>0.133
-    </p>
-  </figcaption>
-
-</figure>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <div class="map-clean"></div>
     <footer>
         <div class="container text-center">
