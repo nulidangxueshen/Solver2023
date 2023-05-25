@@ -199,7 +199,52 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto" style="max-width: 95%;text-align: center;">
                     <h2 style="margin-bottom: 45px;color: var(--bs-dark);"><strong>第三届解法器算法及优化竞赛（SolverChallenge23）赛题</strong></h2>
-                    
+                    <p>百度网盘：&nbsp;<a href="#" target="_blank">待公布</a></p>
+                    <h4>赛题说明</h4>
+                    <p style="text-align: left;">
+                        <strong>端到端时间可分为如下3部分:</strong>
+                        <br>
+                        1. 分析
+                        <br>
+                        2. 准备
+                        <br>
+                        3. 求解
+                        <br>
+                        矩阵和向量的读入、格式转换、分发至多进程、矩阵坐标排序不列入统计时间
+                        <br>
+                        <br>
+                        <strong>
+                            直接法和迭代法对于上述3步的定义略有不同。
+                        </strong>
+                        <br>
+                        <br>
+                        <strong>直接法：</strong>
+                        <br>
+                        1. 分析：利用矩阵结构信息（即不依赖矩阵数值），做解法器预处理，包括图分析、图优化、预开辟空间、节点优化编号等操作，参考intel pardiso的phase=11（注意，pardiso phase=11可以传入矩阵的值做一定的处理，本次比赛不允许）
+                        <br>
+                        2. 准备：利用矩阵数值信息做数值分解，参考intel pardiso phase=22
+                        <br>
+                        3. 求解：输入右端向量b，得到解向量x，参考intel pardiso phase=33
+                        <br>
+                        <br>
+                        <strong>迭代法：</strong>
+                        <br>
+                        1. 分析：利用矩阵结构信息（即不依赖矩阵数值），做解法器预处理，包括预条件子构建、多重网格构建等。
+                        <br>
+                        2. 准备：利用矩阵数值信息做数值准备，包括预条件子数值准备，多重网格数值准备等
+                        <br>
+                        3. 求解：输入右端向量b，得到解向量x
+                        <br>
+                        <br>
+                        <strong>注：</strong>
+                        若将直接法作为预条件子用在迭代法中，则直接法部分参考“直接法”的说明计入迭代法三项相应时间中。
+                        <br>
+                        <img style="max-width: 90%; min-width: 200px; margin-top: 25px; margin-bottom: 25px; " src="assets/img/g3.png">
+                        <br>
+                        <strong>不同题目对于时间的要求不同，请选手注意。</strong>
+                    </p>
+
+
                     <div class="table-responsive" style="margin-bottom: 50px;">
                         <table class="table">
                             <thead>
@@ -234,8 +279,22 @@
                                     <td id="style_td_7">&lt; 1e-10</td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td">求解过程最大内存要求<br></td>
-                                    <td id="style_td_7">&lt; 1.5GB<br></td>
+                                    <td id="style_td">矩阵说明<br></td>
+                                    <td id="style_td_7">
+                                        0-base 矩阵
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">其它说明<br></td>
+                                    <td id="style_td_7">
+                                        文档中要注明使用内存的情况
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">限制</td>
+                                    <td id="style_td_7">每道题限制使用单节点计算资源</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -275,8 +334,19 @@
                                     <td id="style_td_-5">&lt; 1e-10</td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td">求解过程最大内存要求<br></td>
-                                    <td id="style_td_7">&lt; 4.5GB<br></td>
+                                    <td id="style_td">矩阵说明<br></td>
+                                    <td id="style_td_7">0-base 矩阵<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">其它说明<br></td>
+                                    <td id="style_td_7">
+                                        文档中要注明使用内存的情况
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">限制</td>
+                                    <td id="style_td_7">每道题限制使用单节点计算资源</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -320,8 +390,19 @@
                                     <td id="style_td_7">无<br></td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td">其它条件<br></td>
-                                    <td id="style_td_7">初始x0为零向量<br></td>
+                                    <td id="style_td">矩阵说明<br></td>
+                                    <td id="style_td_7">1-base 矩阵<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">其它说明<br></td>
+                                    <td id="style_td_7">
+                                        文档中要注明使用内存的情况
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">限制</td>
+                                    <td id="style_td_7">每道题限制使用单节点计算资源</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -361,7 +442,7 @@
                                 </tr>
                                 <tr>
                                     <td id="style_td-78">MD5</td>
-                                    <td id="style_td_-46">b6e5d5260b2ed7baeefcbf023eae3e24</td>
+                                    <td id="style_td_-46">08416e32dfb1bc5713ebc61da27fbbd5</td>
                                 </tr>
                                 <tr>
                                     <td class="float-none" id="style_td-69">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
@@ -372,8 +453,19 @@
                                     <td id="style_td_7">无<br></td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td">其它条件<br></td>
-                                    <td id="style_td_7">1-base 列主序稀疏矩阵<br></td>
+                                    <td id="style_td">矩阵说明<br></td>
+                                    <td id="style_td_7">1-base 矩阵<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">其它说明<br></td>
+                                    <td id="style_td_7">
+                                        文档中要注明使用内存的情况
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">限制</td>
+                                    <td id="style_td_7">每道题限制使用单节点计算资源</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -411,7 +503,7 @@
                                 </tr>
                                 <tr>
                                     <td id="style_td-68">MD5</td>
-                                    <td id="style_td_-40">ffe742fb6546b5a3ff8a4b6019aa5b68</td>
+                                    <td id="style_td_-40">f4a6e95eadeb36dc383639c66890d723</td>
                                 </tr>
                                 <tr>
                                     <td class="float-none" id="style_td-69">残差向量2范数相对右端向量2范数的下降阈值要求: ||r||<sub>2</sub>&nbsp;/ ||b||<sub>2</sub></td>
@@ -422,8 +514,19 @@
                                     <td id="style_td_7">无<br></td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td">其它条件<br></td>
-                                    <td id="style_td_7">1-base 列主序稀疏矩阵<br></td>
+                                    <td id="style_td">矩阵说明<br></td>
+                                    <td id="style_td_7">1-base 矩阵<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">其它说明<br></td>
+                                    <td id="style_td_7">
+                                        文档中要注明使用内存的情况
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">限制</td>
+                                    <td id="style_td_7">每道题限制使用单节点计算资源</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -474,8 +577,19 @@
                                     <td id="style_td_7">无<br></td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td">其它条件<br></td>
-                                    <td id="style_td_7">初始x0为零向量<br></td>
+                                    <td id="style_td">矩阵说明<br></td>
+                                    <td id="style_td_7">1-base 矩阵<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">其它说明<br></td>
+                                    <td id="style_td_7">
+                                        文档中要注明使用内存的情况
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">限制</td>
+                                    <td id="style_td_7">每道题限制使用单节点计算资源</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -524,10 +638,20 @@
                                     <td id="style_td_7">无<br></td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td">其它条件<br></td>
-                                    <td id="style_td_7">初始x0为零向量<br></td>
+                                    <td id="style_td">矩阵说明<br></td>
+                                    <td id="style_td_7">1-base 矩阵<br></td>
                                 </tr>
-                                
+                                <tr>
+                                    <td id="style_td">其它说明<br></td>
+                                    <td id="style_td_7">
+                                        文档中要注明使用内存的情况
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">限制</td>
+                                    <td id="style_td_7">每道题限制使用单节点计算资源</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -571,8 +695,23 @@
                                     <td id="style_td_-23">&lt; 1e-8</td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td">求解过程最大内存要求<br></td>
-                                    <td id="style_td_7">无<br></td>
+                                    <td id="style_td">矩阵说明<br></td>
+                                    <td id="style_td_7">1-base 矩阵<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">其它说明<br></td>
+                                    <td id="style_td_7">
+                                        文档中要注明使用内存的情况
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">限制</td>
+                                    <td id="style_td_7">每道题限制使用单节点计算资源</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">提示<br></td>
+                                    <td id="style_td_7">请认真分析矩阵元素结构和数值分布，多为块矩阵；可以考虑迭代法，预处理子一般选为将每个块矩阵变成对角矩阵（或三对角、五对角等），或变成更小的对角块矩阵；也可以考虑直接法，注意填入元个数。该题块大小15x15，块类型：满阵/对角阵<br></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -613,8 +752,23 @@
                                     <td id="style_td_-17">&lt; 1e-8</td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td">求解过程最大内存要求<br></td>
-                                    <td id="style_td_7">无<br></td>
+                                    <td id="style_td">矩阵说明<br></td>
+                                    <td id="style_td_7">1-base 矩阵<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">其它说明<br></td>
+                                    <td id="style_td_7">
+                                        文档中要注明使用内存的情况
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">限制</td>
+                                    <td id="style_td_7">每道题限制使用单节点计算资源</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">提示<br></td>
+                                    <td id="style_td_7">一般用直接法<br></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -659,8 +813,23 @@
                                     <td id="style_td_-11">&lt; 1e-8</td>
                                 </tr>
                                 <tr>
-                                    <td id="style_td">求解过程最大内存要求<br></td>
-                                    <td id="style_td_7">无<br></td>
+                                    <td id="style_td">矩阵说明<br></td>
+                                    <td id="style_td_7">1-base 矩阵<br></td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">其它说明<br></td>
+                                    <td id="style_td_7">
+                                        文档中要注明使用内存的情况
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">限制</td>
+                                    <td id="style_td_7">每道题限制使用单节点计算资源</td>
+                                </tr>
+                                <tr>
+                                    <td id="style_td">提示<br></td>
+                                    <td id="style_td_7">请认真分析矩阵元素结构和数值分布，多为块矩阵；可以考虑迭代法，预处理子一般选为将每个块矩阵变成对角矩阵（或三对角、五对角等），或变成更小的对角块矩阵；也可以考虑直接法，注意填入元个数。<br></td>
                                 </tr>
                             </tbody>
                         </table>
